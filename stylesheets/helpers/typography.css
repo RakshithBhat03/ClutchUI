@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* Heading */
+
+.h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+.h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+.h3 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+.h4 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.h5 {
+  font-size: 0.5rem;
+  line-height: 2;
+}
+.h6 {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+/* Text size */
+
+p,
+.txt-reg {
+  font-size: var(--size-9);
+}
+.txt-sm {
+  font-size: var(--size-8);
+}
+.txt-md {
+  font-size: var(--size-11);
+}
+.txt-lg {
+  font-size: var(--size-13);
+}
+
+/* Text weight */
+
+.txt-extra-light {
+  font-weight: var(--weight-extra-light);
+}
+.txt-light {
+  font-weight: var(--weight-light);
+}
+.txt-regular {
+  font-weight: var(--weight-regular);
+}
+.txt-medium {
+  font-weight: var(--weight-medium);
+}
+.txt-semibold {
+  font-weight: var(--weight-semibold);
+}
+.txt-bold {
+  font-weight: var(--weight-bold);
+}
+.txt-black {
+  font-weight: var(--weight-black);
+}
+
+/* Text utilities */
+
+.txt-center {
+  text-align: center;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-strike {
+  text-decoration: line-through;
+}
+
+/* Text colors */
+
+.txt-white {
+  color: var(--text-white);
+}
+.txt-gray {
+  color: var(--text-gray);
+}
+
