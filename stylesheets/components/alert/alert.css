@@ -1,0 +1,96 @@
+/* Default alert */
+.alert {
+  align-items: center;
+  border-radius: var(--radius-sm);
+  display: flex;
+  font-size: calc(var(--size-9) + (1.6 * var(--size-1))); /* 1.1rem */
+  font-weight: var(--weight-medium);
+  justify-content: flex-start;
+  padding: var(--size-9);
+  width: 100%;
+}
+.alert:hover {
+  cursor: pointer;
+}
+
+/* alert colors */
+
+.alert--primary {
+  background-color: var(--alert-primary);
+}
+.alert--secondary {
+  background-color: var(--alert-secondary);
+}
+.alert--success {
+  background-color: var(--alert-success);
+}
+.alert--danger {
+  background-color: var(--alert-danger);
+}
+.alert--warning {
+  background-color: var(--alert-warning);
+}
+
+/* icon alerts */
+
+.alert .alert__icon {
+  font-size: var(--size-11);
+  margin-right: var(--size-5);
+}
+.alert .alert__icon--dismiss {
+  font-size: var(--size-10);
+  margin-left: auto;
+}
+.alert .alert__icon--dismiss:hover {
+  opacity: 0.8;
+}
+
+/* icon colors */
+
+.alert--primary :is(.alert__icon, .alert__icon--dismiss) {
+  color: var(--icon-primary);
+}
+.alert--secondary :is(.alert__icon, .alert__icon--dismiss) {
+  color: var(--icon-secondary);
+}
+.alert--success :is(.alert__icon, .alert__icon--dismiss) {
+  color: var(--icon-success);
+}
+.alert--danger :is(.alert__icon, .alert__icon--dismiss) {
+  color: var(--icon-danger);
+}
+.alert--warning :is(.alert__icon, .alert__icon--dismiss) {
+  color: var(--icon-warning);
+}
+
+/* alerts with link */
+
+.alert .alert--link {
+  cursor: pointer;
+  margin-left: var(--size-3);
+  text-decoration: underline;
+}
+.alert .alert--link:hover {
+  opacity: 0.8;
+}
+
+/* alert with border */
+
+.alert--border {
+  background-color: inherit;
+}
+.alert--border.alert--primary {
+  border: calc(3 * var(--size-1)) solid var(--alert-primary);
+}
+.alert--border.alert--secondary {
+  border: calc(3 * var(--size-1)) solid var(--alert-secondary);
+}
+.alert--border.alert--success {
+  border: calc(3 * var(--size-1)) solid var(--alert-success);
+}
+.alert--border.alert--danger {
+  border: calc(3 * var(--size-1)) solid var(--alert-danger);
+}
+.alert--border.alert--warning {
+  border: calc(3 * var(--size-1)) solid var(--alert-warning);
+}

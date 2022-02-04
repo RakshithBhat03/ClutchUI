@@ -24,6 +24,22 @@
   --text-white: #fff;
   --text-gray: #666666;
 
+  /* Alert colors */
+
+  --alert-primary: rgba(29, 161, 242, 0.6);
+  --alert-secondary: rgba(97, 15, 239, 0.6);
+  --alert-success: rgba(0, 186, 124, 0.6);
+  --alert-danger: rgba(235, 40, 40, 0.6);
+  --alert-warning: rgba(233, 112, 47, 0.8);
+
+  /* Alert icon colors */
+
+  --icon-primary: var(--primary-color-dark);
+  --icon-secondary: var(--secondary-color-dark);
+  --icon-success: rgba(29, 115, 12, 0.9);
+  --icon-danger: rgb(199, 19, 19);
+  --icon-warning: rgb(198, 49, 0);
+
   /* Font weight */
 
   --weight-extra-light: 200;
@@ -65,4 +81,3 @@
   --size-1: 1px;
   --size-0: 0;
 }
-
