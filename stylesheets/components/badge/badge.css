@@ -1,0 +1,148 @@
+.badge-wrapper,
+.badge-avatar,
+.badge-icon {
+  position: relative;
+  overflow: visible;
+}
+
+.badge-wrapper,
+.badge-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.badge {
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-round);
+  border: var(--size-2) solid var(--color-white);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* Badge sizes */
+
+.badge--xs {
+  font-size: var(--size-0);
+  height: var(--size-8);
+  width: var(--size-8);
+}
+.badge--sm {
+  font-size: var(--size-0);
+  height: var(--size-9);
+  width: var(--size-9);
+}
+.badge--md {
+  font-size: calc(var(--size-9) + (1.6 * var(--size-1))); /* 1.1rem */
+  height: var(--size-12);
+  width: var(--size-12);
+}
+.badge--lg {
+  font-size: var(--size-10);
+  height: var(--size-13);
+  width: var(--size-13);
+}
+.badge--xl {
+  font-size: var(--size-11);
+  height: var(--size-15);
+  width: var(--size-15);
+}
+
+/* top left bottom right utility class */
+
+.badge--top-left {
+  left: 0;
+  top: 0;
+}
+.badge--top-right {
+  right: 0;
+  top: 0;
+}
+.badge--bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.badge--bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+/* For rounded and square avatar */
+
+:is(.avatar__img--square, .avatar__img--rounded) ~ .badge--bottom-right {
+  bottom: -15%;
+  right: -15%;
+}
+:is(.avatar__img--square, .avatar__img--rounded) ~ .badge--bottom-left {
+  bottom: -15%;
+  left: -15%;
+}
+:is(.avatar__img--square, .avatar__img--rounded) ~ .badge--top-right {
+  right: -15%;
+  top: -15%;
+}
+:is(.avatar__img--square, .avatar__img--rounded) ~ .badge--top-left {
+  left: -15%;
+  top: -15%;
+}
+
+/* badge on icons */
+
+.badge-icon > i {
+  position: relative;
+}
+
+/* icon size */
+
+.badge-icon--xs {
+  font-size: var(--size-13);
+}
+.badge-icon--sm {
+  font-size: var(--size-17);
+}
+.badge-icon--md {
+  font-size: var(--size-21);
+}
+.badge-icon--lg {
+  font-size: calc(var(--size-21) + var(--size-9));
+}
+.badge-icon--xl {
+  font-size: calc(var(--size-21) + var(--size-13));
+}
+
+/* Positions for badge icons */
+
+.badge-icon .badge--top-right {
+  transform: translate(20%, -40%);
+}
+.badge-icon .badge--top-left {
+  transform: translate(-20%, -40%);
+}
+.badge-icon .badge--bottom-right {
+  transform: translate(40%, 20%);
+}
+.badge-icon .badge--bottom-left {
+  transform: translate(-40%, 20%);
+}
+
+/* badge status */
+
+.badge--status-online {
+  background-color: var(--status-online);
+  font-size: 0;
+}
+.badge--status-offline {
+  background-color: var(--status-offline);
+  font-size: 0;
+}
+.badge--status-idle {
+  background-color: var(--status-idle);
+  font-size: 0;
+}
+.badge--status-busy {
+  background-color: var(--status-busy);
+  font-size: 0;
+}
