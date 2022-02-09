@@ -48,6 +48,14 @@
   --status-idle: rgb(233, 141, 36);
   --status-busy: rgb(231, 18, 18);
 
+  /* Button colors */
+
+  --btn-primary: var(--primary-color);
+  --btn-secondary: var(--secondary-color);
+  --btn-success: rgba(0, 186, 124, 1);
+  --btn-danger: rgba(235, 40, 40, 0.8);
+  --btn-warning: rgba(233, 112, 47, 0.9);
+
   /* Font weight */
 
   --weight-extra-light: 200;
