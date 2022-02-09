@@ -40,6 +40,14 @@
   --icon-danger: rgb(199, 19, 19);
   --icon-warning: rgb(198, 49, 0);
 
+  /* Badge colors */
+
+  --badge-background: rgb(255, 0, 0);
+  --status-online: rgb(18, 231, 18);
+  --status-offline: rgb(118, 131, 118);
+  --status-idle: rgb(233, 141, 36);
+  --status-busy: rgb(231, 18, 18);
+
   /* Font weight */
 
   --weight-extra-light: 200;
