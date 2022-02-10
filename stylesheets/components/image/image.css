@@ -1,0 +1,24 @@
+/* Responsive */
+.img--responsive {
+  height: auto;
+  width: 100%;
+}
+
+.img--round,
+.img--corner,
+.img--square {
+  object-fit: cover;
+}
+/* Image round */
+.img--round {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+/* Image cornered */
+.img--corner {
+  border-radius: var(--radius-lg);
+}
+/* Image square */
+.img--square {
+  aspect-ratio: 1/1;
+}
