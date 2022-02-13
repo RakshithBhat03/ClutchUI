@@ -1,0 +1,103 @@
+.input-field,
+.text-area {
+  border: var(--size-1) solid var(--color-dark-gray);
+  width: 100%;
+}
+.text-area {
+  resize: vertical;
+  min-height: 2em;
+}
+
+:is(.input-field, .text-area):focus {
+  outline: var(--size-1) solid var(--color-dark-gray);
+}
+
+/* Input sizes */
+
+.input--sm {
+  font-size: var(--size-9);
+  padding: var(--size-3) var(--size-5);
+}
+.input--md {
+  font-size: var(--size-10);
+  padding: var(--size-4) var(--size-5);
+}
+.input--lg {
+  font-size: var(--size-11);
+  padding: var(--size-5) var(--size-6);
+}
+
+/* Input shapes */
+
+.input--round {
+  border-radius: var(--radius-round);
+}
+
+.input--corner {
+  border-radius: var(--radius-md);
+}
+
+/* Input types */
+
+.input--primary {
+  border-color: var(--primary-color);
+}
+.input--secondary {
+  border-color: var(--secondary-color);
+}
+.input--success {
+  border-color: var(--input-success);
+}
+.input--fail {
+  border-color: var(--input-fail);
+}
+.input--warning {
+  border-color: var(--input-warning);
+}
+
+:is(.input--primary, .input--success, .input--fail, .input--warning):focus {
+  outline: transparent;
+}
+
+/* Input validation */
+
+.input--validation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input--validation-msg {
+  display: flex;
+  align-items: center;
+  gap: var(--size-5);
+  margin: var(--size-5) var(--size-0);
+}
+
+.input--success ~ .input--validation-msg {
+  color: var(--input-success);
+  font-weight: var(--weight-semibold);
+}
+.input--fail ~ .input--validation-msg {
+  color: var(--input-fail);
+  font-weight: var(--weight-semibold);
+}
+.input--warning ~ .input--validation-msg {
+  color: var(--input-warning);
+  font-weight: var(--weight-semibold);
+}
+
+/* Text area */
+
+.text-area--sm {
+  font-size: var(--size-9);
+  padding: var(--size-3) var(--size-5);
+}
+.text-area--md {
+  font-size: var(--size-10);
+  padding: var(--size-4) var(--size-5);
+}
+.text-area--lg {
+  font-size: var(--size-11);
+  padding: var(--size-5) var(--size-6);
+}

@@ -56,6 +56,12 @@
   --btn-danger: rgba(235, 40, 40, 0.8);
   --btn-warning: rgba(233, 112, 47, 0.9);
 
+  /* Input/form colors */
+
+  --input-success: rgba(0, 186, 124, 1);
+  --input-fail: rgba(235, 40, 40, 0.8);
+  --input-warning: rgba(233, 112, 47, 0.9);
+
   /* Font weight */
 
   --weight-extra-light: 200;
