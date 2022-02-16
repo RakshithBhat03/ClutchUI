@@ -1,0 +1,35 @@
+/* Simple snackbar */
+.snackbar {
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: var(--size-7) var(--size-9);
+  width: 100%;
+}
+
+.snackbar * {
+  color: var(--text-white);
+  font-size: var(--size-10);
+}
+
+.snackbar__btn {
+  display: flex;
+  gap: var(--size-5);
+}
+
+/* Stacked snackbar */
+
+.snackbar.snackbar--stacked {
+  flex-direction: column;
+}
+
+.snackbar.snackbar--stacked .snackbar__message {
+  margin-right: auto;
+}
+
+.snackbar.snackbar--stacked .snackbar__btn {
+  margin-left: auto;
+}
