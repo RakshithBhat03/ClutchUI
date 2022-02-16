@@ -62,6 +62,12 @@
   --input-fail: rgba(235, 40, 40, 0.8);
   --input-warning: rgba(233, 112, 47, 0.9);
 
+  /* Box shadows */
+
+  --card-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --nav-box-shadow: 0 4px 6px -5px #222;
+  --main-box-shadow: -4px 0 6px -5px #222;
+
   /* Font weight */
 
   --weight-extra-light: 200;
