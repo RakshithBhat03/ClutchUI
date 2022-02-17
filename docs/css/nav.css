@@ -4,7 +4,7 @@ nav {
   color: var(--primary-color);
   height: calc(5 * var(--size-9));
   margin: auto;
-  max-width: 1200px;
+  max-width: calc(75 * var(--size-9));
 }
 
 .nav {
