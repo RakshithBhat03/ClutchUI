@@ -6,28 +6,53 @@ body {
 
 /* Heading */
 
+h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+h5 {
+  font-size: 1.25rem;
+  line-height: 2;
+}
+h6 {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
 .h1 {
   font-size: 3rem;
   line-height: 1.3;
 }
 .h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.25;
 }
 .h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.3;
 }
 .h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 .h5 {
-  font-size: 0.5rem;
+  font-size: 1.25rem;
   line-height: 2;
 }
 .h6 {
-  font-size: 3rem;
+  font-size: 1rem;
   line-height: 1.3;
 }
 
@@ -94,4 +119,3 @@ p,
 .txt-gray {
   color: var(--text-gray);
 }
-
