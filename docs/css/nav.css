@@ -1,0 +1,106 @@
+/* Navigation */
+
+nav {
+  color: var(--primary-color);
+  height: calc(5 * var(--size-9));
+  margin: auto;
+  max-width: 1200px;
+}
+
+.nav {
+  background-color: var(--color-white);
+  box-shadow: var(--nav-box-shadow);
+  font-size: var(--size-10);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* Nav menu */
+
+.nav .nav--clutch-logo {
+  font-weight: var(--weight-bold);
+  font-size: var(--size-13);
+  gap: var(--size-5);
+}
+
+.nav .nav--clutch-logo:hover {
+  color: var(--secondary-color);
+}
+
+.nav .nav--clutch-logo i {
+  color: var(--primary-color-dark);
+}
+
+/* Nav mobile */
+
+.nav-mobile {
+  background-color: var(--color-white);
+  height: 100vh;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 0.4s linear;
+  visibility: hidden;
+  width: 50vw;
+  z-index: 1;
+}
+
+.nav-mobile .nav__menu--list {
+  gap: var(--size-17);
+  margin-top: calc(5 * var(--size-9));
+}
+
+.nav-mobile-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-mobile-close {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.nav-mobile-close i {
+  font-size: var(--size-11);
+}
+
+/* Nav list links */
+
+.nav .nav__menu {
+  font-weight: var(--weight-semibold);
+}
+
+.nav ul li a:hover {
+  border-bottom: calc(3 * var(--size-1)) solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.nav__menu--list i {
+  color: var(--primary-color-dark);
+}
+
+@media screen and (max-width: 850px) {
+  .nav nav {
+    padding-inline: var(--size-11);
+  }
+
+  .nav nav ul li a {
+    display: none;
+  }
+
+  .btn-dark-mode {
+    display: none;
+  }
+
+  .nav ul button:not(.btn-dark-mode) {
+    display: block;
+  }
+
+  .nav__menu--list i {
+    color: var(--primary-color);
+  }
+}
