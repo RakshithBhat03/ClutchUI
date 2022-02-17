@@ -18,7 +18,9 @@
 .display-grid {
   display: grid;
 }
-
+.display-none {
+  display: none;
+}
 /* Flex */
 
 .flex-col {
@@ -88,3 +90,35 @@
   display: inline-flex;
 }
 
+/* Visibility */
+
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-1 {
+  opacity: 1;
+}
+.invisible {
+  visibility: hidden;
+}
+
+/* Overflow */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Postion */
+
+.position-sticky {
+  position: sticky;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
