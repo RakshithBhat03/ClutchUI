@@ -58,11 +58,11 @@ iframe {
 
 /* Hero text */
 
-.hero-text a button {
+.hero-text a .hero-btn {
   color: var(--primary-color);
 }
 
-.hero-text a button:hover {
+.hero-text a .hero-btn:hover {
   color: var(--color-white);
 }
 
