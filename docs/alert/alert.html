@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/f6863db2d0.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="../../styles.css" />
+    <title>ClutchUI | Alert</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <header class="nav">
+            <nav class="display-flex align-items-center justify-content-between px-5">
+                <a href="/">
+                    <div class="nav--clutch-logo display-flex align-items-center justify-content-center">
+                        <i class="fas fa-basketball-ball"></i>ClutchUI </div>
+                </a>
+                <div class="nav__menu display-flex align-items-center justify-content-end">
+                    <ul class="nav__menu--list display-flex align-items-center justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon btn-dark-mode"
+                                aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn--xl btn--outline btn-icon display-none btn-hamburger">
+                            <i class="fas fa-bars"
+                                aria-hidden="true"></i>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-mobile">
+                <div class="nav__menu display-flex align-items-center justify-content-center">
+                    <ul class="nav__menu--list display-flex flex-col align-items-start justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon"
+                                aria-hidden="true"></i>
+                        </button>
+                        <li></li>
+                    </ul>
+                    <button class="btn btn--xl btn--outline btn-icon nav-mobile-close">
+                        <i class="fas fa-2x fa-times"
+                            aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- main content -->
+        <div class="main-wrapper">
+            <aside class="main__sidebar px-9 py-9">
+                <ul class="main__sidebar--list">
+                    <li class="display-none mobile-menu-btn display-flex"> Menu <i
+                            class="fas fa-angle-double-right arrow-icon"></i>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Get Started</li>
+                    <li><a href="../getstarted.html#introduction">Introduction</a></li>
+                    <li><a href="../getstarted.html#installation">Installation</a></li>
+                    <li>
+                        <a href="../getstarted.html#starter-template">Starter Template</a>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Components</li>
+                    <li><a class="active-link"
+                            href="../alert/alert.html">Alert</a></li>
+                    <li><a href="../avatar/avatar.html">Avatar</a></li>
+                    <li><a href="../badge/badge.html">Badge</a></li>
+                    <li><a href="../button/button.html">Button</a></li>
+                    <li><a href="../card/card.html">Card</a></li>
+                    <li><a href="../image/image.html">Image</a></li>
+                    <li><a href="../input/input.html">Input</a></li>
+                    <li><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li><a href="../typography/typography.html">Typography</a></li>
+                    <li><a href="../snackbar/snackbar.html">Snackbar</a></li>
+                </ul>
+            </aside>
+            <section class="main__section">
+                <h1 class="h1">Alert</h1>
+                <hr />
+                <section id="alert-introduction">
+                    <h2>Introduction</h2>
+                    <p> An alert is a simple block of useful information that is used to display and get the user's
+                        attention </p>
+                </section>
+                <!-- Simple alerts -->
+                <h2>Simple alerts</h2>
+                <section id="simple-alert">
+                    <p>A simple alert which is used to display useful information.</p>
+                    <div class="demo-container mt-12">
+                        <div class="alert alert--primary">This is a primary alert!</div>
+                        <div class="alert alert--secondary"> This is a secondary alert! </div>
+                        <div class="alert alert--success">This is a success alert!</div>
+                        <div class="alert alert--danger">This is a danger alert!</div>
+                        <div class="alert alert--warning">This is a warning alert!</div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Primary%2520alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--primary%2522%253EThis%2520is%2520a%2520primary%2520alert%21%253C%252Fdiv%253E%250A%253C%21--%2520Secondary%2520alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--secondary%2522%253EThis%2520is%2520a%2520secondary%2520alert%21%253C%252Fdiv%253E%250A%253C%21--%2520Success%2520alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--success%2522%253EThis%2520is%2520a%2520success%2520alert%21%253C%252Fdiv%253E%250A%253C%21--%2520Danger%2520alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--danger%2522%253EThis%2520is%2520a%2520danger%2520alert%21%253C%252Fdiv%253E%250A%253C%21--%2520Warning%2520alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--warning%2522%253EThis%2520is%2520a%2520warning%2520alert%21%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: hidden;
+                    aspect-ratio: 3/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Alert with icons -->
+                <h2>Alert with icons</h2>
+                <section id="icon-alert">
+                    <p> Contains an icon which can be used to convey the importance of the alert. </p>
+                    <div class="demo-container mt-12">
+                        <div class="alert alert--primary">
+                            <i class="fas fa-user alert__icon"></i>This is a primary alert! </div>
+                        <div class="alert alert--secondary">
+                            <i class="fas fa-users alert__icon"></i>This is a secondary alert! </div>
+                        <div class="alert alert--success">
+                            <i class="far fa-check-circle alert__icon"></i>This is a success alert! </div>
+                        <div class="alert alert--danger">
+                            <i class="fas fa-exclamation-triangle alert__icon"></i>This is a danger alert! </div>
+                        <div class="alert alert--warning">
+                            <i class="fas fa-exclamation-circle alert__icon"></i>This is a warning alert! </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert--primary%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-user%2520alert__icon%2522%253E%253C%252Fi%253EThis%2520is%2520a%2520primary%2520alert%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--secondary%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-users%2520alert__icon%2522%253E%253C%252Fi%253EThis%2520is%2520a%2520secondary%2520alert%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--success%2522%253E%250A%2509%253Ci%2520class%253D%2522far%2520fa-check-circle%2520alert__icon%2522%253E%253C%252Fi%253EThis%2520is%2520a%2520success%2520alert%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--danger%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert__icon%2522%253E%253C%252Fi%253EThis%2520is%2520a%2520danger%2520alert%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--warning%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520alert__icon%2522%253E%253C%252Fi%253EThis%2520is%2520a%2520warning%2520alert%21%250A%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    aspect-ratio: 2/1;
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Alert with border -->
+                <h2>Alert with border</h2>
+                <section id="border-alert">
+                    <p> A simple alert with border only. Border color is inherited from the type of the button. </p>
+                    <div class="demo-container mt-12">
+                        <div class="alert alert--primary alert--border"> This is a primary alert! </div>
+                        <div class="alert alert--secondary alert--border"> This is a secondary alert! </div>
+                        <div class="alert alert--success alert--border"> This is a success alert! </div>
+                        <div class="alert alert--danger alert--border"> This is a danger alert! </div>
+                        <div class="alert alert--warning alert--border"> This is a warning alert! </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert--primary%2520alert--border%2522%253EThis%2520is%2520a%2520primary%2520alert%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--secondary%2520alert--border%2522%253EThis%2520is%2520a%2520secondary%2520alert%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--success%2520alert--border%2522%253EThis%2520is%2520a%2520success%2520alert%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--danger%2520alert--border%2522%253EThis%2520is%2520a%2520danger%2520alert%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--warning%2520alert--border%2522%253EThis%2520is%2520a%2520warning%2520alert%21%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    aspect-ratio: 3/1;
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Alert with dismiss -->
+                <h2>Alert with dismiss</h2>
+                <section id="dismiss-alert">
+                    <p> Alert with a simple dismiss button which removes the alert when clicked. </p>
+                    <div class="demo-container mt-12">
+                        <div class="alert alert--primary alert--border">
+                            <i class="fas fa-user alert__icon"></i> This is a primary alert!<i
+                                class="far fa-times-circle alert__icon--dismiss"></i>
+                        </div>
+                        <div class="alert alert--secondary alert--border">
+                            <i class="fas fa-users alert__icon"></i> This is a secondary alert!<i
+                                class="far fa-times-circle alert__icon--dismiss"></i>
+                        </div>
+                        <div class="alert alert--success alert--border">
+                            <i class="far fa-check-circle alert__icon"></i> This a is success alert!<i
+                                class="far fa-times-circle alert__icon--dismiss"></i>
+                        </div>
+                        <div class="alert alert--danger alert--border">
+                            <i class="fas fa-exclamation-triangle alert__icon"></i> This is a danger alert!<i
+                                class="far fa-times-circle alert__icon--dismiss"></i>
+                        </div>
+                        <div class="alert alert--warning alert--border">
+                            <i class="fas fa-exclamation-circle alert__icon"></i> This is a warning alert!<i
+                                class="far fa-times-circle alert__icon--dismiss"></i>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert--primary%2520alert--border%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-user%2520alert__icon%2522%253E%253C%252Fi%253EThis%2520is%2520a%2520primary%2520alert%21%250A%2520%2520%2509%253Ci%2520class%253D%2522far%2520fa-times-circle%2520alert__icon--dismiss%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--secondary%2520alert--border%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-users%2520alert__icon%2522%253E%253C%252Fi%253EThis%2520is%2520a%2520secondary%2520alert%21%250A%2520%2520%2509%253Ci%2520class%253D%2522far%2520fa-times-circle%2520alert__icon--dismiss%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--success%2520alert--border%2522%253E%250A%2509%253Ci%2520class%253D%2522far%2520fa-check-circle%2520alert__icon%2522%253E%253C%252Fi%253E%2520This%2520a%2520is%2520success%2520alert%21%250A%2509%253Ci%2520class%253D%2522far%2520fa-times-circle%2520alert__icon--dismiss%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--danger%2520alert--border%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert__icon%2522%253E%253C%252Fi%253EThis%2520is%2520a%2520danger%2520alert%21%250A%2520%2520%2509%253Ci%2520class%253D%2522far%2520fa-times-circle%2520alert__icon--dismiss%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert--warning%2520alert--border%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520alert__icon%2522%253E%253C%252Fi%253EThis%2520is%2520a%2520warning%2520alert%21%250A%2509%253Ci%2520class%253D%2522far%2520fa-times-circle%2520alert__icon--dismiss%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    aspect-ratio: 1.75/1;
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <div class="pre-next-links display-flex align-items-center justify-content-between mt-9 mb-12">
+                    <a href="../getstarted.html"><i class="fas fa-chevron-left"></i> Get Started</a>
+                    <a href="../avatar/avatar.html">Avatar <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <div class="footer py-16 px-5">
+            <footer class="display-grid">
+                <div class="footer-social">
+                    <div class="footer-info">Socials</div>
+                    <ul class="footer-link display-flex align-items-center justify-content-start">
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/RakshithBhat03/"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/rakshithbhat/"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://twitter.com/RakshithBhat1"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright"> &copy; ClutchUI, 2022 All rights reserved. </div>
+                </div>
+                <div class="footer-additional">
+                    <div class="footer-text"> Illustrations by <a target="_blank"
+                            href="https://www.manypixels.co/gallery">manypixels</a>
+                    </div>
+                    <div class="footer-text">Version 1.0</div>
+                    <div class="footer-text">Made with &hearts; by Rakshith Bhat</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="../js/nav.js"></script>
+    <script type="text/javascript"
+        src="../js/sidebar.js"></script>
+</body>
+
+</html>
