@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="../../styles.css" />
+    <title>ClutchUI | Card</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navigation -->
+        <header class="nav">
+            <nav class="display-flex align-items-center justify-content-between px-5">
+                <a href="/">
+                    <div class="nav--clutch-logo display-flex align-items-center justify-content-center">
+                        <i class="fas fa-basketball-ball"></i>ClutchUI </div>
+                </a>
+                <div class="nav__menu display-flex align-items-center justify-content-end">
+                    <ul class="nav__menu--list display-flex align-items-center justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon btn-dark-mode"
+                                aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn--xl btn--outline btn-icon display-none btn-hamburger">
+                            <i class="fas fa-bars"
+                                aria-hidden="true"></i>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-mobile">
+                <div class="nav__menu display-flex align-items-center justify-content-center">
+                    <ul class="nav__menu--list display-flex flex-col align-items-start justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon"
+                                aria-hidden="true"></i>
+                        </button>
+                        <li></li>
+                    </ul>
+                    <button class="btn btn--xl btn--outline btn-icon nav-mobile-close">
+                        <i class="fas fa-2x fa-times"
+                            aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- main content -->
+        <div class="main-wrapper">
+            <aside class="main__sidebar px-9 py-9">
+                <ul class="main__sidebar--list">
+                    <li class="display-none mobile-menu-btn display-flex"> Menu <i
+                            class="fas fa-angle-double-right arrow-icon"></i>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Get Started</li>
+                    <li><a href="../getstarted.html#introduction">Introduction</a></li>
+                    <li><a href="../getstarted.html#installation">Installation</a></li>
+                    <li>
+                        <a href="../getstarted.html#starter-template">Starter Template</a>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Components</li>
+                    <li><a href="../alert/alert.html">Alert</a></li>
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li><a href="../badge/badge.html">Badge</a></li>
+                    <li><a href="../button/button.html">Button</a></li>
+                    <li><a class="active-link"
+                            href="../card/card.html">Card</a></li>
+                    <li><a href="../image/image.html">Image</a></li>
+                    <li><a href="../input/input.html">Input</a></li>
+                    <li><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li><a href="../typography/typography.html">Typography</a></li>
+                    <li><a href="../snackbar/snackbar.html">Snackbar</a></li>
+                </ul>
+            </aside>
+            <section class="main__section">
+                <h1 class="h1">Card</h1>
+                <hr />
+                <section id="card-introduction">
+                    <h2>Introduction</h2>
+                    <p> Cards are generally used for conveying short or brief information about certain product. Cards
+                        are commonly used in e-commerce websites to showcase their wide variety for products. </p>
+                    <br />
+                    <p> Cards provided by ClutchUI by default take up the entire width of the parent container. Make
+                        sure that the parent container has a specific width of your choice </p>
+                </section>
+                <!-- Horizontal card -->
+                <h2>Horizontal Card</h2>
+                <section id="card--horizontal">
+                    <p> The card is laid out horizontally and the card body takes up the entire width of the parent
+                        container. It consits of card image and card body. Card body contians the information about the
+                        card such as title, author, product prices and cta buttons. </p>
+                    <div class="demo-container mt-12">
+                        <!-- Horizontal card 1 -->
+                        <div class="card card--horizontal card--box-shadow card--border-md">
+                            <div class="card__img">
+                                <img src="../../assests/nike-jordan.jpg"
+                                    alt="Nike Air Jordan"
+                                    class="img--responisve" />
+                            </div>
+                            <div class="card__body">
+                                <h4 class="card__title">Air Jordan X</h4>
+                                <small class="card__text-info">By Nike</small>
+                                <p class="card__text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                                    magnam eius autem? Vitae magni, ea ipsam eaque iste fugit accusantium? </p>
+                                <div class="card__price">
+                                    <span class="card__price--mrp">₹49,999</span>
+                                    <span class="card__price--strike">₹59,999</span>
+                                    <span class="card__price--discount">20% off</span>
+                                </div>
+                                <div class="card__link">
+                                    <div class="card__link--btn">
+                                        <button class="btn btn--md btn--primary btn--outline btn--icon">
+                                            <i class="fas fa-cart-plus"></i>Add to cart </button>
+                                        <button class="btn btn--md btn--secondary btn--outline"> Save for later
+                                        </button>
+                                    </div>
+                                    <div class="card__link--cta">
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Horizontal card 2 -->
+                        <div class="card card--horizontal card--box-shadow card--border-md">
+                            <div class="card__img">
+                                <img src="../../assests/nike-jordan.jpg"
+                                    alt="Nike Air Jordan"
+                                    class="img--responisve" />
+                            </div>
+                            <div class="card__body">
+                                <h4 class="card__title">Air Jordan X</h4>
+                                <small class="card__text-info">By Nike</small>
+                                <p class="card__text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                                    magnam eius autem? Vitae magni, ea ipsam eaque iste fugit accusantium? </p>
+                                <div class="card__price">
+                                    <span class="card__price--mrp">₹49,999</span>
+                                    <span class="card__price--strike">₹59,999</span>
+                                    <span class="card__price--discount">20% off</span>
+                                </div>
+                                <div class="card__link">
+                                    <div class="card__link--btn">
+                                        <button class="btn btn--md btn--primary btn--outline btn--icon">
+                                            <i class="fas fa-cart-plus"></i>Add to cart </button>
+                                        <button class="btn btn--md btn--secondary btn--outline"> Save for later
+                                        </button>
+                                    </div>
+                                    <div class="card__link--cta">
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C0%29&t=one-light&wt=none&l=auto&width=754&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card--horizontal%2520card--box-shadow%2520card--border-md%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card__img%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522your%2520img%2520here%2522%2520alt%253D%2522%2522%2520class%253D%2522img--responisve%2522%252F%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2509%2509%253Ch4%2520class%253D%2522card__title%2522%253ECard%2520Title%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card__text-info%2522%253EBy%2520ClutchUI%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card__text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ad%2520magnam%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520eius%2520autem%253F%2520Vitae%2520magni%252C%2520ea%2520ipsam%2520eaque%2520iste%2520fugit%2520accusantium%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--mrp%2522%253E%25E2%2582%25B949%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--strike%2522%253E%25E2%2582%25B959%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--discount%2522%253E20%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--primary%2520btn--outline%2520btn--icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cart-plus%2522%253E%253C%252Fi%253EAdd%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--secondary%2520btn--outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Save%2520for%2520later%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--cta%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: scroll;
+                    aspect-ratio: 1.75/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Vertical card -->
+                <h2>Vertical Card</h2>
+                <section id="card--vertical">
+                    <p> Here the card is laid out vertically. Just add the class <code>card--vertical</code> to make the
+                        card vertical. </p>
+                    <div class="demo-container mt-12">
+                        <!-- Vertical card 1 -->
+                        <div class="vertical-card-container">
+                            <div class="card card--vertical card--box-shadow card--border-md">
+                                <div class="card__img">
+                                    <img src="../../assests/nike-jordan.jpg"
+                                        alt="Nike Air Jordan"
+                                        class="img--responisve" />
+                                </div>
+                                <div class="card__body">
+                                    <h4 class="card__title">Air Jordan X</h4>
+                                    <small class="card__text-info">By Nike</small>
+                                    <p class="card__text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                                        magnam eius autem? Vitae magni, ea ipsam eaque iste fugit accusantium? </p>
+                                    <div class="card__price">
+                                        <span class="card__price--mrp">₹49,999</span>
+                                        <span class="card__price--strike">₹59,999</span>
+                                        <span class="card__price--discount">20% off</span>
+                                    </div>
+                                    <div class="card__link">
+                                        <div class="card__link--btn">
+                                            <button class="btn btn--sm btn--primary btn--outline btn--icon">
+                                                <i class="fas fa-cart-plus"></i>Add to cart </button>
+                                            <button class="btn btn--sm btn--secondary btn--outline"> Save for later
+                                            </button>
+                                        </div>
+                                        <div class="card__link--cta">
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Vertical card 2 -->
+                        <div class="vertical-card-container">
+                            <div class="card card--vertical card--box-shadow card--border-md">
+                                <div class="card__img">
+                                    <img src="../../assests/nike-jordan.jpg"
+                                        alt="Nike Air Jordan"
+                                        class="img--responisve" />
+                                </div>
+                                <div class="card__body">
+                                    <h4 class="card__title">Air Jordan X</h4>
+                                    <small class="card__text-info">By Nike</small>
+                                    <p class="card__text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                                        magnam eius autem? Vitae magni, ea ipsam eaque iste fugit accusantium? </p>
+                                    <div class="card__price">
+                                        <span class="card__price--mrp">₹49,999</span>
+                                        <span class="card__price--strike">₹59,999</span>
+                                        <span class="card__price--discount">20% off</span>
+                                    </div>
+                                    <div class="card__link">
+                                        <div class="card__link--btn">
+                                            <button class="btn btn--sm btn--primary btn--outline btn--icon">
+                                                <i class="fas fa-cart-plus"></i>Add to cart </button>
+                                            <button class="btn btn--sm btn--secondary btn--outline"> Save for later
+                                            </button>
+                                        </div>
+                                        <div class="card__link--cta">
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=763&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card--vertical%2520card--box-shadow%2520card--border-md%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card__img%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522your%2520img%2520here%2522%2520alt%253D%2522%2522%2520class%253D%2522img--responisve%2522%252F%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2509%2509%253Ch4%2520class%253D%2522card__title%2522%253ECard%2520Title%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card__text-info%2522%253EBy%2520ClutchUI%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card__text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ad%2520magnam%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520eius%2520autem%253F%2520Vitae%2520magni%252C%2520ea%2520ipsam%2520eaque%2520iste%2520fugit%2520accusantium%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--mrp%2522%253E%25E2%2582%25B949%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--strike%2522%253E%25E2%2582%25B959%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--discount%2522%253E20%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--primary%2520btn--outline%2520btn--icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cart-plus%2522%253E%253C%252Fi%253EAdd%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--secondary%2520btn--outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Save%2520for%2520later%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--cta%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: scroll;
+                    aspect-ratio: 1.75/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Text card -->
+                <h2>Text Card</h2>
+                <section id="card--text">
+                    <p>These cards only contain text content and no image.</p>
+                    <div class="demo-container mt-12">
+                        <div class="card card--vertical card--box-shadow card--border-md">
+                            <div class="card__body">
+                                <h4 class="card__title">Air Jordan X</h4>
+                                <small class="card__text-info">By Nike</small>
+                                <p class="card__text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                                    magnam eius autem? Vitae magni, ea ipsam eaque iste fugit accusantium? </p>
+                                <div class="card__price">
+                                    <span class="card__price--mrp">₹49,999</span>
+                                    <span class="card__price--strike">₹59,999</span>
+                                    <span class="card__price--discount">20% off</span>
+                                </div>
+                                <div class="card__link">
+                                    <div class="card__link--btn">
+                                        <button class="btn btn--md btn--primary btn--outline btn--icon">
+                                            <i class="fas fa-cart-plus"></i>Add to cart </button>
+                                        <button class="btn btn--md btn--secondary btn--outline"> Save for later
+                                        </button>
+                                    </div>
+                                    <div class="card__link--cta">
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=763&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card--vertical%2520card--box-shadow%2520card--border-md%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2520%2520%2520%2520%253Ch4%2520class%253D%2522card__title%2522%253EAir%2520Jordan%2520X%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522card__text-info%2522%253EBy%2520Nike%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card__text%2522%253E%250A%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ad%2520magnam%2520eius%250A%2520%2520%2520%2520%2520autem%253F%2520Vitae%2520magni%252C%2520ea%2520ipsam%2520eaque%2520iste%2520fugit%2520accusantium%253F%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__price%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--mrp%2522%253E%25E2%2582%25B949%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--strike%2522%253E%25E2%2582%25B959%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--discount%2522%253E20%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--primary%2520btn--outline%2520btn--icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cart-plus%2522%253E%253C%252Fi%253EAdd%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--secondary%2520btn--outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520Save%2520for%2520later%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--cta%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: scroll;
+                    aspect-ratio: 1.75/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Overlay card -->
+                <h2>Card with text overlay</h2>
+                <section id="card-overlay">
+                    <p> These cards have a overlay on top of the card. It's commonly used to show products which are
+                        sold out. You can implement it by using the <code>card--overlay</code> class in your code. </p>
+                    <div class="demo-container mt-12">
+                        <div class="card card--horizontal card--overlay card--box-shadow card--border-md">
+                            <div class="card__img">
+                                <img src="../../assests/nike-jordan.jpg"
+                                    alt="Nike Air Jordan"
+                                    class="img--responisve" />
+                            </div>
+                            <div class="card__body">
+                                <h4 class="card__title">Air Jordan X</h4>
+                                <small class="card__text-info">By Nike</small>
+                                <p class="card__text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                                    magnam eius autem? Vitae magni, ea ipsam eaque iste fugit accusantium? </p>
+                                <div class="card__price">
+                                    <span class="card__price--mrp">₹49,999</span>
+                                    <span class="card__price--strike">₹59,999</span>
+                                    <span class="card__price--discount">20% off</span>
+                                </div>
+                                <div class="card__link">
+                                    <div class="card__link--btn">
+                                        <button class="btn btn--md btn--primary btn--outline btn--icon">
+                                            <i class="fas fa-cart-plus"></i>Add to cart </button>
+                                        <button class="btn btn--md btn--secondary btn--outline"> Save for later
+                                        </button>
+                                    </div>
+                                    <div class="card__link--cta">
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__overlay-container">
+                                <div class="card__overlay--text">
+                                    <span>Out of stock</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=763&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520%2520class%253D%2522card%2520card--horizontal%2520card--overlay%2520card--box-shadow%2520card--border-md%2522%250A%2520%2520%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__img%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522your%2520image%2520here%2522%2520alt%253D%2522alt%2520title%2522%2520class%253D%2522img--responisve%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2520%2520%2520%2520%253Ch4%2520class%253D%2522card__title%2522%253EAir%2520Jordan%2520X%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522card__text-info%2522%253EBy%2520Nike%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card__text%2522%253E%250A%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ad%2520magnam%2520eius%250A%2520%2520%2520%2520%2520autem%253F%2520Vitae%2520magni%252C%2520ea%2520ipsam%2520eaque%2520iste%2520fugit%2520accusantium%253F%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__price%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--mrp%2522%253E%25E2%2582%25B949%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--strike%2522%253E%25E2%2582%25B959%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--discount%2522%253E20%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--primary%2520btn--outline%2520btn--icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cart-plus%2522%253E%253C%252Fi%253EAdd%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--secondary%2520btn--outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520Save%2520for%2520later%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--cta%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__overlay-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__overlay--text%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253EOut%2520of%2520stock%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: scroll;
+                    aspect-ratio: 1.75/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Dismiss card -->
+                <h2>Card with dismiss</h2>
+                <section id="card-dismiss">
+                    <p> Cards have an extra button which can be used to dismiss the card.You can implement it by using
+                        the <code>card--dismiss</code> class in your code. </p>
+                    <div class="demo-container mt-12">
+                        <div class="card card--horizontal card--box-shadow card--border-md card--dismiss">
+                            <div class="card__img">
+                                <img src="../../assests/nike-jordan.jpg"
+                                    alt="Nike Air Jordan"
+                                    class="img--responisve" />
+                            </div>
+                            <div class="card__body">
+                                <h4 class="card__title">Air Jordan X</h4>
+                                <small class="card__text-info">By Nike</small>
+                                <p class="card__text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                                    magnam eius autem? Vitae magni, ea ipsam eaque iste fugit accusantium? </p>
+                                <div class="card__price">
+                                    <span class="card__price--mrp">₹49,999</span>
+                                    <span class="card__price--strike">₹59,999</span>
+                                    <span class="card__price--discount">20% off</span>
+                                </div>
+                                <div class="card__link">
+                                    <div class="card__link--btn">
+                                        <button class="btn btn--md btn--primary btn--outline btn--icon">
+                                            <i class="fas fa-cart-plus"></i>Add to cart </button>
+                                        <button class="btn btn--md btn--secondary btn--outline"> Save for later
+                                        </button>
+                                    </div>
+                                    <div class="card__link--cta">
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                                    </div>
+                                    <button class="card__btn--dismiss">
+                                        <i class="far fa-times-circle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=763&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520%2520class%253D%2522card%2520card--horizontal%2520card--box-shadow%2520card--border-md%2520card--dismiss%2522%250A%2520%2520%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__img%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522your%2520image%2520here%2522%2520alt%253D%2522alt%2520title%2522%2520class%253D%2522img--responisve%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2520%2520%2520%2520%253Ch4%2520class%253D%2522card__title%2522%253EAir%2520Jordan%2520X%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522card__text-info%2522%253EBy%2520Nike%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card__text%2522%253E%250A%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ad%2520magnam%2520eius%250A%2520%2520%2520%2520%2520autem%253F%2520Vitae%2520magni%252C%2520ea%2520ipsam%2520eaque%2520iste%2520fugit%2520accusantium%253F%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__price%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--mrp%2522%253E%25E2%2582%25B949%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--strike%2522%253E%25E2%2582%25B959%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--discount%2522%253E20%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--primary%2520btn--outline%2520btn--icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cart-plus%2522%253E%253C%252Fi%253EAdd%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--secondary%2520btn--outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520Save%2520for%2520later%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--cta%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card__btn--dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: scroll;
+                    aspect-ratio: 1.75/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <h2>Card with badge</h2>
+                <section id="card-badge">
+                    <p> Badges in cards are used to convey some additional information about the card.You can implement
+                        it by using the <code>card--badge</code> class in your code. </p>
+                    <div class="demo-container mt-12">
+                        <div class="vertical-card-container">
+                            <div class="card card--vertical card--box-shadow card--border-md card--dismiss card--badge">
+                                <div class="card__img">
+                                    <img src="../../assests/nike-jordan.jpg"
+                                        alt="Nike Air Jordan"
+                                        class="img--responisve" />
+                                </div>
+                                <div class="card__body">
+                                    <h4 class="card__title">Air Jordan X</h4>
+                                    <small class="card__text-info">By Nike</small>
+                                    <p class="card__text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                                        magnam eius autem? Vitae magni, ea ipsam eaque iste fugit accusantium? </p>
+                                    <div class="card__price">
+                                        <span class="card__price--mrp">₹69,999</span>
+                                        <span class="card__price--strike">₹79,999</span>
+                                        <span class="card__price--discount">20% off</span>
+                                    </div>
+                                    <div class="card__link">
+                                        <div class="card__link--btn">
+                                            <button class="btn btn--md btn--primary btn--outline btn--icon">
+                                                <i class="fas fa-cart-plus"></i>Add to cart </button>
+                                            <button class="btn btn--md btn--secondary btn--outline"> Save for later
+                                            </button>
+                                        </div>
+                                        <div class="card__link--cta">
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                                        </div>
+                                        <div class="card__badge">20% off</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=763&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520%2520class%253D%2522card%2520card--vertical%2520card--box-shadow%2520card--border-md%2520card--dismiss%2520card--badge%2522%250A%2520%2520%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__img%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520src%253D%2522your%2520image%2520here%2522%250A%2520%2520%2520%2520%2520alt%253D%2522alt%2520title%2522%250A%2520%2520%2520%2520%2520class%253D%2522img--responisve%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2520%2520%2520%2520%253Ch4%2520class%253D%2522card__title%2522%253EAir%2520Jordan%2520X%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522card__text-info%2522%253EBy%2520Nike%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card__text%2522%253E%250A%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ad%2520magnam%2520eius%250A%2520%2520%2520%2520%2520autem%253F%2520Vitae%2520magni%252C%2520ea%2520ipsam%2520eaque%2520iste%2520fugit%2520accusantium%253F%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__price%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--mrp%2522%253E%25E2%2582%25B969%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--strike%2522%253E%25E2%2582%25B979%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__price--discount%2522%253E20%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--primary%2520btn--outline%2520btn--icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cart-plus%2522%253E%253C%252Fi%253EAdd%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--secondary%2520btn--outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520Save%2520for%2520later%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__link--cta%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__badge%2522%253E20%2525%2520off%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: scroll;
+                    aspect-ratio: 1.75/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <div class="pre-next-links display-flex align-items-center justify-content-between mt-9 mb-12">
+                    <a href="../button/button.html"><i class="fas fa-chevron-left"></i> Button</a><a
+                        href="../image/image.html">Image <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <div class="footer py-16 px-5">
+            <footer class="display-grid">
+                <div class="footer-social">
+                    <div class="footer-info">Socials</div>
+                    <ul class="footer-link display-flex align-items-center justify-content-start">
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/RakshithBhat03/"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/rakshithbhat/"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://twitter.com/RakshithBhat1"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright"> &copy; ClutchUI, 2022 All rights reserved. </div>
+                </div>
+                <div class="footer-additional">
+                    <div class="footer-text"> Illustrations by <a target="_blank"
+                            href="https://www.manypixels.co/gallery">manypixels</a>
+                    </div>
+                    <div class="footer-text">Version 1.0</div>
+                    <div class="footer-text">Made with &hearts; by Rakshith Bhat</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="../js/nav.js"></script>
+    <script type="text/javascript"
+        src="../js/sidebar.js"></script>
+</body>
+
+</html>
