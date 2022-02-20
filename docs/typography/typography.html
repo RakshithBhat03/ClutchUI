@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="../../styles.css" />
+    <title>ClutchUI | Typography</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navigation -->
+        <header class="nav">
+            <nav class="display-flex align-items-center justify-content-between px-5">
+                <a href="/">
+                    <div class="nav--clutch-logo display-flex align-items-center justify-content-center">
+                        <i class="fas fa-basketball-ball"></i>ClutchUI </div>
+                </a>
+                <div class="nav__menu display-flex align-items-center justify-content-end">
+                    <ul class="nav__menu--list display-flex align-items-center justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon btn-dark-mode"
+                                aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn--xl btn--outline btn-icon display-none btn-hamburger">
+                            <i class="fas fa-bars"
+                                aria-hidden="true"></i>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-mobile">
+                <div class="nav__menu display-flex align-items-center justify-content-center">
+                    <ul class="nav__menu--list display-flex flex-col align-items-start justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon"
+                                aria-hidden="true"></i>
+                        </button>
+                        <li></li>
+                    </ul>
+                    <button class="btn btn--xl btn--outline btn-icon nav-mobile-close">
+                        <i class="fas fa-2x fa-times"
+                            aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- main content -->
+        <div class="main-wrapper">
+            <aside class="main__sidebar px-9 py-9">
+                <ul class="main__sidebar--list">
+                    <li class="display-none mobile-menu-btn display-flex"> Menu <i
+                            class="fas fa-angle-double-right arrow-icon"></i>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Get Started</li>
+                    <li><a href="../getstarted.html#introduction">Introduction</a></li>
+                    <li><a href="../getstarted.html#installation">Installation</a></li>
+                    <li>
+                        <a href="../getstarted.html#starter-template">Starter Template</a>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Components</li>
+                    <li><a href="../alert/alert.html">Alert</a></li>
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li><a href="../badge/badge.html">Badge</a></li>
+                    <li><a href="../button/button.html">Button</a></li>
+                    <li><a href="../card/card.html">Card</a></li>
+                    <li><a href="../image/image.html">Image</a></li>
+                    <li><a href="../input/input.html">Input</a></li>
+                    <li><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li>
+                        <a class="active-link"
+                            href="../typography/typography.html">Typography</a>
+                    </li>
+                    <li><a href="../snackbar/snackbar.html">Snackbar</a></li>
+                </ul>
+            </aside>
+            <section class="main__section">
+                <h1 class="h1">Typography</h1>
+                <hr />
+                <section id="typography-introduction">
+                    <h2>Introduction</h2>
+                    <p> Typography is an integral part of any component library. ClutchUI provides various typography
+                        class aswell as some text utilities. </p>
+                </section>
+                <!-- Heading -->
+                <h2>Heading</h2>
+                <section id="typography-heading">
+                    <p>All heading tags from <code>&lt;h1&gt; to &lt;h6&gt; </code></p>
+                    <div class="demo-container-typography mt-12">
+                        <h1 class="h1">Heading h1</h1>
+                        <h2 class="h2">Heading h2</h2>
+                        <h3 class="h3">Heading h3</h3>
+                        <h4 class="h4">Heading h4</h4>
+                        <h5 class="h5">Heading h5</h5>
+                        <h6 class="h6">Heading h6</h6>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=335&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%2520h1%253C%252Fh1%253E%250A%253Ch2%253EHeading%2520h2%253C%252Fh2%253E%250A%253Ch3%253EHeading%2520h3%253C%252Fh3%253E%250A%253Ch4%253EHeading%2520h4%253C%252Fh4%253E%250A%253Ch5%253EHeading%2520h5%253C%252Fh5%253E%250A%253Ch6%253EHeading%2520h6%253C%252Fh6%253E"
+                                style="
+                    width: 100%;
+                    height: 200px;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Text sizes -->
+                <h2>Text Utilites</h2>
+                <h3>Text Size</h3>
+                <section id="typography-size">
+                    <p>ClutchUI provides 3 types of text-size classes.</p>
+                    <br />
+                    <p><code>&lt;txt-sm | txt-md | txt-lg&gt;</code></p>
+                    <div class="demo-container mt-12">
+                        <p class="txt-sm">Text Small</p>
+                        <br />
+                        <p>Text Regular</p>
+                        <br />
+                        <p class="txt-md">Text Medium</p>
+                        <br />
+                        <p class="txt-lg">Text Large</p>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-sm%2522%253EText%2520Small%253C%252Fp%253E%250A%253Cp%253EText%2520Regular%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-md%2522%253EText%2520Medium%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-lg%2522%253EText%2520Large%253C%252Fp%253E"
+                                style="
+                    width: 100%;
+                    height: 150px;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Text alignment -->
+                <h3>Text Alignment</h3>
+                <section id="typography-alignment">
+                    <p>ClutchUI provides 3 types of text-alignment classes.</p>
+                    <br />
+                    <p><code>&lt;txt-left | txt-center | txt-right&gt;</code></p>
+                    <div class="demo-container-alignment display-block mt-12">
+                        <p class="txt-md txt-center">Text center</p>
+                        <br />
+                        <p class="txt-md txt-right">Text right</p>
+                        <br />
+                        <p class="txt-md txt-left">Text left</p>
+                        <br />
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-md%2520txt-center%2522%253EText%2520center%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-md%2520txt-right%2522%253EText%2520right%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-md%2520txt-left%2522%253EText%2520left%253C%252Fp%253E"
+                                style="
+                    width: 100%;
+                    height: 140px;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Text Decoration -->
+                <h3>Text Decoration</h3>
+                <section id="typography-decoration">
+                    <p> ClutchUI provides classes such as <code>txt-gray</code> and <code>txt-white</code> for gray and
+                        white text respectively. </p>
+                    <br />
+                    <p> Additonally you can use the class <code>txt-strike</code> for strike-through effect. </p>
+                    <br />
+                    <div class="demo-container display-block mt-12">
+                        <p class="txt-md txt-gray">Text gray</p>
+                        <br />
+                        <p class="txt-md txt-white">Text white</p>
+                        <br />
+                        <p class="txt-md txt-strike">Text strike through</p>
+                        <br />
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-md%2520txt-gray%2522%253EText%2520gray%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cp%2520class%253D%2522txt-md%2520txt-white%2522%253EText%2520white%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cp%2520class%253D%2522txt-md%2520txt-strike%2522%253EText%2520strike%2520through%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                                style="
+                    width: 100%;
+                    height: 200px;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Text Weights -->
+                <h3>Text Weights</h3>
+                <section id="typography-weight">
+                    <p>ClutchUI provides 7 different classes for font-weights.</p>
+                    <br />
+                    <p>
+                        <code>&lt;.txt-extra-light | .txt-light | .txt-regular | .txt-medium | .txt-semibold |<br />
+                            .txt-bold | .txt-black&gt;</code>
+                    </p>
+                    <br />
+                    <div class="demo-container-typography display-block mt-12">
+                        <p class="txt-md txt-extra-light">Weight extra light</p>
+                        <br />
+                        <p class="txt-md txt-light">Weight light</p>
+                        <br />
+                        <p class="txt-md txt-regular">Weight regular</p>
+                        <br />
+                        <p class="txt-md txt-medium">Weight medium</p>
+                        <br />
+                        <p class="txt-md txt-semibold">Weight semibold</p>
+                        <br />
+                        <p class="txt-md txt-bold">Weight bold</p>
+                        <br />
+                        <p class="txt-md txt-black">Weight black</p>
+                        <br />
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-md%2520txt-extra-light%2522%253EWeight%2520extra%2520light%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-md%2520txt-light%2522%253EWeight%2520light%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-md%2520txt-regular%2522%253EWeight%2520regular%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-md%2520txt-medium%2522%253EWeight%2520medium%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-md%2520txt-semibold%2522%253EWeight%2520semibold%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-md%2520txt-bold%2522%253EWeight%2520bold%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-md%2520txt-black%2522%253EWeight%2520black%253C%252Fp%253E%250A"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: hidden;
+                    aspect-ratio: 3/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <div class="pre-next-links display-flex align-items-center justify-content-between mt-9 mb-12">
+                    <a href="../navigation/navigation.html"><i class="fas fa-chevron-left"></i> Navigation</a><a
+                        href="../snackbar/snackbar.html">Snackbar <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <div class="footer py-16 px-5">
+            <footer class="display-grid">
+                <div class="footer-social">
+                    <div class="footer-info">Socials</div>
+                    <ul class="footer-link display-flex align-items-center justify-content-start">
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/RakshithBhat03/"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/rakshithbhat/"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://twitter.com/RakshithBhat1"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright"> &copy; ClutchUI, 2022 All rights reserved. </div>
+                </div>
+                <div class="footer-additional">
+                    <div class="footer-text"> Illustrations by <a target="_blank"
+                            href="https://www.manypixels.co/gallery">manypixels</a>
+                    </div>
+                    <div class="footer-text">Version 1.0</div>
+                    <div class="footer-text">Made with &hearts; by Rakshith Bhat</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="../js/nav.js"></script>
+    <script type="text/javascript"
+        src="../js/sidebar.js"></script>
+</body>
+
+</html>
