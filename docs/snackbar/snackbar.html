@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="../../styles.css" />
+    <title>ClutchUI | Snackbar</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navigation -->
+        <header class="nav">
+            <nav class="display-flex align-items-center justify-content-between px-5">
+                <a href="/">
+                    <div class="nav--clutch-logo display-flex align-items-center justify-content-center">
+                        <i class="fas fa-basketball-ball"></i>ClutchUI </div>
+                </a>
+                <div class="nav__menu display-flex align-items-center justify-content-end">
+                    <ul class="nav__menu--list display-flex align-items-center justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon btn-dark-mode"
+                                aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn--xl btn--outline btn-icon display-none btn-hamburger">
+                            <i class="fas fa-bars"
+                                aria-hidden="true"></i>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-mobile">
+                <div class="nav__menu display-flex align-items-center justify-content-center">
+                    <ul class="nav__menu--list display-flex flex-col align-items-start justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon"
+                                aria-hidden="true"></i>
+                        </button>
+                        <li></li>
+                    </ul>
+                    <button class="btn btn--xl btn--outline btn-icon nav-mobile-close">
+                        <i class="fas fa-2x fa-times"
+                            aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- main content -->
+        <div class="main-wrapper">
+            <aside class="main__sidebar px-9 py-9">
+                <ul class="main__sidebar--list">
+                    <li class="display-none mobile-menu-btn display-flex"> Menu <i
+                            class="fas fa-angle-double-right arrow-icon"></i>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Get Started</li>
+                    <li><a href="../getstarted.html#introduction">Introduction</a></li>
+                    <li><a href="../getstarted.html#installation">Installation</a></li>
+                    <li>
+                        <a href="../getstarted.html#starter-template">Starter Template</a>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Components</li>
+                    <li><a href="../alert/alert.html">Alert</a></li>
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li><a href="../badge/badge.html">Badge</a></li>
+                    <li><a href="../button/button.html">Button</a></li>
+                    <li><a href="../card/card.html">Card</a></li>
+                    <li><a href="../image/image.html">Image</a></li>
+                    <li><a href="../input/input.html">Input</a></li>
+                    <li><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li>
+                        <a href="../typography/typography.html">Typography</a>
+                    </li>
+                    <li>
+                        <a class="active-link"
+                            href="../snackbar/snackbar.html">Snackbar</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="main__section">
+                <h1 class="h1">Snackbar</h1>
+                <hr />
+                <section id="image-introduction">
+                    <h2>Introduction</h2>
+                    <p> Snackbar contains useful information about a task which is presented to the user usually on the
+                        bottom of the screen. Snackbars are displayed only for a short peroid of time and usually used
+                        to gain the users attention or to notify them. </p>
+                </section>
+                <h2>Simple Snackbar</h2>
+                <section id="snackbar-simple">
+                    <p> With ClutchUI you can build a snackbar with ease. You can start by using class
+                        <code>snackbar</code>. </p>
+                    <div class="demo-container mt-12">
+                        <div class="snackbar">
+                            <div class="snackbar__message">
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident et ipsam
+                                    saepe porro iure quae quas quo fugit nobis? </p>
+                            </div>
+                            <div class="snackbar__btn">
+                                <button class="btn btn--outline btn--primary btn--md"> Retry </button>
+                                <button class="btn btn--md btn--icon">
+                                    <i class="fa fa-times"
+                                        title="close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar__message%2522%253E%250A%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ducimus%2520provident%250A%2520%2520%2520%2520%2520et%2520ipsam%2520saepe%2520porro%2520iure%2520quae%2520quas%2520quo%2520fugit%2520nobis%253F%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar__btn%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--outline%2520btn--primary%2520btn--md%2522%253E%250A%2520%2520%2520%2520%2520Retry%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--icon%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%2520title%253D%2522close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    aspect-ratio: 2/1;
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="snackbar-stacked">
+                    <h2>Stacked Snackbar</h2>
+                    <p> You can create a stacked snackbar by using the <code>snackbar--stacked</code> class. </p>
+                    <div class="demo-container mt-12">
+                        <div class="snackbar snackbar--stacked">
+                            <div class="snackbar__message">
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident et ipsam
+                                    saepe porro iure quae quas quo fugit nobis? </p>
+                            </div>
+                            <div class="snackbar__btn">
+                                <button class="btn btn--outline btn--primary btn--md"> Retry </button>
+                                <button class="btn btn--md btn--icon">
+                                    <i class="fa fa-times"
+                                        title="close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2520snackbar--stacked%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar__message%2522%253E%250A%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ducimus%2520provident%250A%2520%2520%2520%2520%2520et%2520ipsam%2520saepe%2520porro%2520iure%2520quae%2520quas%2520quo%2520fugit%2520nobis%253F%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar__btn%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--outline%2520btn--primary%2520btn--md%2522%253E%250A%2520%2520%2520%2520%2520Retry%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--icon%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%2520title%253D%2522close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: hidden;
+                    aspect-ratio: 2/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <div class="pre-next-links display-flex align-items-center justify-content-between mt-9 mb-12">
+                    <a href="../typography/typography.html"><i class="fas fa-chevron-left"></i> Typography</a><a
+                        href="../getstarted.html">Docs <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <div class="footer py-16 px-5">
+            <footer class="display-grid">
+                <div class="footer-social">
+                    <div class="footer-info">Socials</div>
+                    <ul class="footer-link display-flex align-items-center justify-content-start">
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/RakshithBhat03/"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/rakshithbhat/"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://twitter.com/RakshithBhat1"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright"> &copy; ClutchUI, 2022 All rights reserved. </div>
+                </div>
+                <div class="footer-additional">
+                    <div class="footer-text"> Illustrations by <a target="_blank"
+                            href="https://www.manypixels.co/gallery">manypixels</a>
+                    </div>
+                    <div class="footer-text">Version 1.0</div>
+                    <div class="footer-text">Made with &hearts; by Rakshith Bhat</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="../js/nav.js"></script>
+    <script type="text/javascript"
+        src="../js/sidebar.js"></script>
+</body>
+
+</html>
