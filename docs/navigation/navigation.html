@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="../../styles.css" />
+    <title>ClutchUI | Navigation</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navigation -->
+        <header class="nav">
+            <nav class="display-flex align-items-center justify-content-between px-5">
+                <a href="/">
+                    <div class="nav--clutch-logo display-flex align-items-center justify-content-center">
+                        <i class="fas fa-basketball-ball"></i>ClutchUI </div>
+                </a>
+                <div class="nav__menu display-flex align-items-center justify-content-end">
+                    <ul class="nav__menu--list display-flex align-items-center justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon btn-dark-mode"
+                                aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn--xl btn--outline btn-icon display-none btn-hamburger">
+                            <i class="fas fa-bars"
+                                aria-hidden="true"></i>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-mobile">
+                <div class="nav__menu display-flex align-items-center justify-content-center">
+                    <ul class="nav__menu--list display-flex flex-col align-items-start justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon"
+                                aria-hidden="true"></i>
+                        </button>
+                        <li></li>
+                    </ul>
+                    <button class="btn btn--xl btn--outline btn-icon nav-mobile-close">
+                        <i class="fas fa-2x fa-times"
+                            aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- main content -->
+        <div class="main-wrapper">
+            <aside class="main__sidebar px-9 py-9">
+                <ul class="main__sidebar--list">
+                    <li class="display-none mobile-menu-btn display-flex"> Menu <i
+                            class="fas fa-angle-double-right arrow-icon"></i>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Get Started</li>
+                    <li><a href="../getstarted.html#introduction">Introduction</a></li>
+                    <li><a href="../getstarted.html#installation">Installation</a></li>
+                    <li>
+                        <a href="../getstarted.html#starter-template">Starter Template</a>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Components</li>
+                    <li><a href="../alert/alert.html">Alert</a></li>
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li><a href="../badge/badge.html">Badge</a></li>
+                    <li><a href="../button/button.html">Button</a></li>
+                    <li><a href="../card/card.html">Card</a></li>
+                    <li><a href="../image/image.html">Image</a></li>
+                    <li><a href="../input/input.html">Input</a></li>
+                    <li>
+                        <a class="active-link"
+                            href="../navigation/navigation.html">Navigation</a>
+                    </li>
+                    <li><a href="../typography/typography.html">Typography</a></li>
+                    <li><a href="../snackbar/snackbar.html">Snackbar</a></li>
+                </ul>
+            </aside>
+            <section class="main__section">
+                <h1 class="h1">Navigation</h1>
+                <hr />
+                <section id="navigation-introduction">
+                    <h2>Introduction</h2>
+                    <p> Navigation are essential part of any website. With ClutchUI you can build quick and easy
+                        navigation sections. </p>
+                </section>
+                <h2>Simple Navigation</h2>
+                <section id="navigation-simple">
+                    <div class="demo-container-nav mt-12">
+                        <header class="navigation-wrapper">
+                            <div class="navigation">
+                                <div class="navigation__title">
+                                    <a href="#"><i class="fas fa-basketball-ball"></i><span>ClutchStore</span></a>
+                                </div>
+                                <div class="navigation__search">
+                                    <div class="navigation__search-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <input type="text"
+                                        class="input--field input--lg input--round" />
+                                </div>
+                                <div class="navigation__login">
+                                    <button class="btn btn--primary btn--md btn--outline px-12"> Login </button>
+                                </div>
+                                <div class="navigation__hamburger">
+                                    <button class="btn btn--md btn--icon btn--outline">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
+                                <div class="navigation__menu">
+                                    <ul class="navigation__menu-list">
+                                        <li>
+                                            <button class="btn btn--md btn--icon btn--outline">
+                                                <i class="fas fa-heart"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="btn btn--md btn--icon btn--outline">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cheader%2520class%253D%2522navigation-wrapper%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522navigation%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation__title%2522%253E%250A%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-basketball-ball%2522%253E%253C%252Fi%253E%253Cspan%253EClutchStore%253C%252Fspan%253E%253C%252Fa%250A%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation__search%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation__search-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input--field%2520input--lg%2520input--round%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation__login%2522%253E%250A%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--primary%2520btn--md%2520btn--outline%2520px-12%2522%253E%250A%2520%2520%2520%2520%2520%2520Login%250A%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation__hamburger%2522%253E%250A%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--icon%2520btn--outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation__menu%2522%253E%250A%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522navigation__menu-list%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--icon%2520btn--outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn--md%2520btn--icon%2520btn--outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fheader%253E"
+                                style="
+                    width: 100%;
+                    transform: scale(1);
+                    overflow: hidden;
+                    aspect-ratio: 2/1;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <div class="pre-next-links display-flex align-items-center justify-content-between mt-9 mb-12">
+                    <a href="../input/input.html"><i class="fas fa-chevron-left"></i> Input</a><a
+                        href="../typography/typography.html">Typography <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <div class="footer py-16 px-5">
+            <footer class="display-grid">
+                <div class="footer-social">
+                    <div class="footer-info">Socials</div>
+                    <ul class="footer-link display-flex align-items-center justify-content-start">
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/RakshithBhat03/"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/rakshithbhat/"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://twitter.com/RakshithBhat1"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright"> &copy; ClutchUI, 2022 All rights reserved. </div>
+                </div>
+                <div class="footer-additional">
+                    <div class="footer-text"> Illustrations by <a target="_blank"
+                            href="https://www.manypixels.co/gallery">manypixels</a>
+                    </div>
+                    <div class="footer-text">Version 1.0</div>
+                    <div class="footer-text">Made with &hearts; by Rakshith Bhat</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="../js/nav.js"></script>
+    <script type="text/javascript"
+        src="../js/sidebar.js"></script>
+</body>
+
+</html>
