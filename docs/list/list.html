@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="../../styles.css" />
+    <title>ClutchUI | Lists</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navigation -->
+        <header class="nav">
+            <nav class="display-flex align-items-center justify-content-between px-5">
+                <a href="/">
+                    <div class="nav--clutch-logo display-flex align-items-center justify-content-center">
+                        <i class="fas fa-basketball-ball"></i>ClutchUI </div>
+                </a>
+                <div class="nav__menu display-flex align-items-center justify-content-end">
+                    <ul class="nav__menu--list display-flex align-items-center justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon btn-dark-mode"
+                                aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn--xl btn--outline btn-icon display-none btn-hamburger">
+                            <i class="fas fa-bars"
+                                aria-hidden="true"></i>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-mobile">
+                <div class="nav__menu display-flex align-items-center justify-content-center">
+                    <ul class="nav__menu--list display-flex flex-col align-items-start justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon"
+                                aria-hidden="true"></i>
+                        </button>
+                        <li></li>
+                    </ul>
+                    <button class="btn btn--xl btn--outline btn-icon nav-mobile-close">
+                        <i class="fas fa-2x fa-times"
+                            aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- main content -->
+        <div class="main-wrapper">
+            <aside class="main__sidebar px-9 py-9">
+                <ul class="main__sidebar--list">
+                    <li class="display-none mobile-menu-btn display-flex"> Menu <i
+                            class="fas fa-angle-double-right arrow-icon"></i>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Get Started</li>
+                    <li><a href="../getstarted.html#introduction">Introduction</a></li>
+                    <li><a href="../getstarted.html#installation">Installation</a></li>
+                    <li>
+                        <a href="../getstarted.html#starter-template">Starter Template</a>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Components</li>
+                    <li><a href="../alert/alert.html">Alert</a></li>
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li><a href="../badge/badge.html">Badge</a></li>
+                    <li><a href="../button/button.html">Button</a></li>
+                    <li><a href="../card/card.html">Card</a></li>
+                    <li>
+                        <a href="../grid/grid.html">Grid</a>
+                    </li>
+                    <li><a href="../image/image.html">Image</a></li>
+                    <li><a href="../input/input.html">Input</a></li>
+                    <li>
+                        <a class="active-link"
+                            href="../list/list.html">List</a>
+                    </li>
+                    <li>
+                        <a href="../modal/modal.html">Modal</a>
+                    </li>
+                    <li><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li>
+                        <a href="../rating/rating.html">Rating</a>
+                    </li>
+                    <li>
+                        <a href="../typography/typography.html">Typography</a>
+                    </li>
+                    <li>
+                        <a href="../snackbar/snackbar.html">Snackbar</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="main__section">
+                <h1 class="h1">List</h1>
+                <hr />
+                <section id="list-introduction">
+                    <h2>Introduction</h2>
+                    <p>Lists are used to group together similar items. There are two types of lists, ordered and
+                        un-ordered. ClutchUI allows you to create these lists with ease.</p>
+                </section>
+                <h2>Unordered list</h2>
+                <p>Here are some of the unordered lists provided by <b>ClutchUI</b></p>
+                <section id="list-spaced">
+                    <h3>Spaced Lists</h3>
+                    <p>These lists are spaced horizontally with space between them.</p>
+                    <br>
+                    <p>You can adjust the space using <code>gap-1 | gap-2 | gap-3</code> class. </p>
+                    <div class="demo-container mt-12">
+                        <ul class="display-flex gap-1 justify-content-center">
+                            <li class="list-item width-100 txt-semibold p-5">Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Item 4</li>
+                        </ul>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522display-flex%2520gap-1%2520justify-content-center%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Ful%253E"
+                                style="width: 100%; height: 200px; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="list-stacked">
+                    <h3>Stacked Lists</h3>
+                    <p>These lists are spaced vertically on top of each other with space between them.</p>
+                    <br>
+                    <p>You can adjust the space using <code>gap-1 | gap-2 | gap-3</code> class. </p>
+                    <div class="demo-container mt-12">
+                        <ul class="display-flex flex-col gap-1 justify-content-center">
+                            <li class="list-item width-100 txt-semibold p-5">Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Item 4</li>
+                        </ul>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522display-flex%2520flex-col%2520gap-1%2520justify-content-center%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Ful%253E"
+                                style="width: 100%; height: 200px; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="list-circle">
+                    <h3>Shaped lists</h3>
+                    <p>There are three types of shaped lists.</p>
+                    <br>
+                    <p>Bullet list - <code>list-bullet</code>, Circle list - <code>list-circle</code> and Square list -
+                        <code>list-square</code> </p>
+                    <div class="demo-container mt-12">
+                        <ul class="list-bullet">
+                            <li class="list-item width-100 txt-semibold p-5">Bullet Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Bullet Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Bullet Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Bullet Item 4</li>
+                        </ul>
+                        <ul class="list-circle">
+                            <li class="list-item width-100 txt-semibold p-5">Circle Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Circle Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Circle Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Circle Item 4</li>
+                        </ul>
+                        <ul class="list-square">
+                            <li class="list-item width-100 txt-semibold p-5">Square Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Square Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Square Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Square Item 4</li>
+                        </ul>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-bullet%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-circle%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-square%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Ful%253E"
+                                style="width: 100%; height: 450px; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <h2>Ordered Lists</h2>
+                <p>Here are some of the ordered lists provided by <b>ClutchUI</b>.</p>
+                <section id="list-numbered">
+                    <h3>Numbered Lists</h3>
+                    <p>There are three types of numbered lists provided by <b>ClutchUI</b>.</p>
+                    <br>
+                    <p>Numbered Lists using <code>list-number</code>, lower roman lists using
+                        <code>list-lower-roman</code> and upper roman lists using <code>list-upper-roman</code>.</p>
+                    <div class="demo-container mt-12">
+                        <ol class="list-number">
+                            <li class="list-item width-100 txt-semibold p-5">Numbered Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Numbered Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Numbered Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Numbered Item 4</li>
+                        </ol>
+                        <ol class="list-lower-roman">
+                            <li class="list-item width-100 txt-semibold p-5">Lower-roman Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Lower-roman Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Lower-roman Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Lower-roman Item 4</li>
+                        </ol>
+                        <ol class="list-upper-roman">
+                            <li class="list-item width-100 txt-semibold p-5">Upper-roman Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Upper-roman Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Upper-roman Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Upper-roman Item 4</li>
+                        </ol>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Col%2520class%253D%2522list-number%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253Col%2520class%253D%2522list-lower-roman%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253Col%2520class%253D%2522list-lower-roman%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Fol%253E"
+                                style="width: 100%; height: 450px; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="list-alpha">
+                    <h3>Alphabetical Lists</h3>
+                    <p>There are two types of alphabetical lists provided by <b>ClutchUI</b>.</p>
+                    <br>
+                    <p>Lower alphabets lists using <code>list-lower-alpha</code> and upper alphabets lists using
+                        <code>list-upper-alpha</code>.</p>
+                    <div class="demo-container mt-12">
+                        <ol class="list-lower-alpha">
+                            <li class="list-item width-100 txt-semibold p-5">Lower-alpha Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Lower-alpha Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Lower-alpha Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Lower-alpha Item 4</li>
+                        </ol>
+                        <ol class="list-upper-alpha">
+                            <li class="list-item width-100 txt-semibold p-5">Upper-alpha Item 1</li>
+                            <li class="list-item width-100 txt-semibold p-5">Upper-alpha Item 2</li>
+                            <li class="list-item width-100 txt-semibold p-5">Upper-alpha Item 3</li>
+                            <li class="list-item width-100 txt-semibold p-5">Upper-alpha Item 4</li>
+                        </ol>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Col%2520class%253D%2522list-lower-alpha%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253Col%2520class%253D%2522list-lower-alpha%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25201%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25202%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25203%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522list-item%2520width-100%2520txt-semibold%2520p-5%2522%253EItem%25204%253C%252Fli%253E%250A%253C%252Fol%253E"
+                                style="width: 100%; height: 320px; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <div class="pre-next-links display-flex align-items-center justify-content-between mt-9 mb-12">
+                    <a href="../input/input.html"><i class="fas fa-chevron-left"></i> Input</a><a
+                        href="../modal/modal.html">Modal <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <div class="footer py-16 px-5">
+            <footer class="display-grid">
+                <div class="footer-social">
+                    <div class="footer-info">Socials</div>
+                    <ul class="footer-link display-flex align-items-center justify-content-start">
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/RakshithBhat03/"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/rakshithbhat/"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://twitter.com/RakshithBhat1"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright"> &copy; ClutchUI, 2022 All rights reserved. </div>
+                </div>
+                <div class="footer-additional">
+                    <div class="footer-text"> Illustrations by <a target="_blank"
+                            href="https://www.manypixels.co/gallery">manypixels</a>
+                    </div>
+                    <div class="footer-text">Version 1.0</div>
+                    <div class="footer-text">Made with &hearts; by Rakshith Bhat</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="../js/nav.js"></script>
+    <script type="text/javascript"
+        src="../js/sidebar.js"></script>
+</body>
+
+</html>
