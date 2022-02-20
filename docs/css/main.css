@@ -127,13 +127,6 @@ iframe {
   transition: transform 0.3s linear;
 }
 
-.main__sidebar {
-  align-self: start;
-  position: sticky;
-  top: calc(5 * var(--size-9));
-  transition: all 0.3s linear;
-}
-
 .main__sidebar--list li:not(.sidebar--chapter, .mobile-menu-btn) {
   color: var(--color-dark-gray);
   font-size: calc(var(--size-1) + var(--size-9));
@@ -231,14 +224,6 @@ iframe {
 @media screen and (min-width: 851px) {
   .main__sidebar--list li:not(.mobile-menu-btn) {
     display: block;
-  }
-
-  .main__sidebar {
-    align-self: start;
-    max-height: 100vh;
-    position: sticky;
-    top: calc(5 * var(--size-9));
-    transition: all 0.3s linear;
   }
 }
 
