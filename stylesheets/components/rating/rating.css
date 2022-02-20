@@ -1,0 +1,14 @@
+/* Rating container */
+.rating-container .fa-star {
+  color: var(--status-idle);
+  font-weight: var(--weight-regular);
+}
+
+.fa-star.rating-filled {
+  font-weight: var(--weight-black);
+}
+
+.fa-star.rating-half::before {
+  font-weight: var(--weight-black);
+  content: "\f5c0";
+}
