@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="../../styles.css" />
+    <title>ClutchUI | Input</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navigation -->
+        <header class="nav">
+            <nav class="display-flex align-items-center justify-content-between px-5">
+                <a href="/">
+                    <div class="nav--clutch-logo display-flex align-items-center justify-content-center">
+                        <i class="fas fa-basketball-ball"></i>ClutchUI </div>
+                </a>
+                <div class="nav__menu display-flex align-items-center justify-content-end">
+                    <ul class="nav__menu--list display-flex align-items-center justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon btn-dark-mode"
+                                aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn--xl btn--outline btn-icon display-none btn-hamburger">
+                            <i class="fas fa-bars"
+                                aria-hidden="true"></i>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-mobile">
+                <div class="nav__menu display-flex align-items-center justify-content-center">
+                    <ul class="nav__menu--list display-flex flex-col align-items-start justify-content-center">
+                        <li><a class="py-4 px-9"
+                                href="../../">Home</a></li>
+                        <li>
+                            <a class="py-4 px-9 active-link"
+                                href="../getstarted.html">Docs</a>
+                        </li>
+                        <li>
+                            <a class="py-4 px-9"
+                                href="https://github.com/RakshithBhat03/ClutchUI"
+                                target="_blank">Contribute <i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <button class="btn btn--xl btn--outline btn-icon">
+                            <i class="fas fa-moon"
+                                aria-hidden="true"></i>
+                        </button>
+                        <li></li>
+                    </ul>
+                    <button class="btn btn--xl btn--outline btn-icon nav-mobile-close">
+                        <i class="fas fa-2x fa-times"
+                            aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- main content -->
+        <div class="main-wrapper">
+            <aside class="main__sidebar px-9 py-9">
+                <ul class="main__sidebar--list">
+                    <li class="display-none mobile-menu-btn display-flex"> Menu <i
+                            class="fas fa-angle-double-right arrow-icon"></i>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Get Started</li>
+                    <li><a href="../getstarted.html#introduction">Introduction</a></li>
+                    <li><a href="../getstarted.html#installation">Installation</a></li>
+                    <li>
+                        <a href="../getstarted.html#starter-template">Starter Template</a>
+                    </li>
+                    <li class="sidebar--chapter"><a href=""></a>Components</li>
+                    <li><a href="../alert/alert.html">Alert</a></li>
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li><a href="../badge/badge.html">Badge</a></li>
+                    <li><a href="../button/button.html">Button</a></li>
+                    <li><a href="../card/card.html">Card</a></li>
+                    <li><a href="../image/image.html">Image</a></li>
+                    <li><a class="active-link"
+                            href="../input/input.html">Input</a></li>
+                    <li><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li><a href="../typography/typography.html">Typography</a></li>
+                    <li><a href="../snackbar/snackbar.html">Snackbar</a></li>
+                </ul>
+            </aside>
+            <section class="main__section">
+                <h1 class="h1">Input</h1>
+                <hr />
+                <section id="input-introduction">
+                    <h2>Introduction</h2>
+                    <p> Inputs are mainly used in Login or Sign-up forms and other general use cases. </p>
+                </section>
+                <!-- Simple Input -->
+                <h2>Simple Input</h2>
+                <section id="input-default">
+                    <p> With ClutchUI, you can create simple inputs in a jiffy. Just use the <code>input-field</code> in
+                        your input class list. You can also define the size of the input field by adding
+                        <code>input--md</code> class for medium size. </p>
+                    <div class="demo-container mt-12">
+                        <input class="input-field input--md"
+                            placeholder="Enter text here"
+                            type="text" />
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cinput%2520class%253D%2522input-field%2520input--md%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E"
+                                style="
+                    width: 100%;
+                    height: 110px;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Input size and shapes -->
+                <h2>Input sizes</h2>
+                <section id="input-size">
+                    <p> ClutchUI provides various input sizes. One of which was mentioned above. </p>
+                    <br />
+                    <p> There are a total of 3 sizes, which are <b>Small</b>, <b>Medium</b> and <b>Large</b>. You can
+                        use the following class to implement them. <code>&lt;input--sm | input--md |
+                            input--lg&gt;</code>. </p>
+                    <div class="demo-container mt-12">
+                        <input class="input-field input--sm"
+                            placeholder="Enter text here"
+                            type="text" /><input class="input-field input--md"
+                            placeholder="Enter text here"
+                            type="text" /><input class="input-field input--lg"
+                            placeholder="Enter text here"
+                            type="text" />
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cinput%2520class%253D%2522input-field%2520input--sm%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E%250A%253Cinput%2520class%253D%2522input-field%2520input--md%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E%250A%253Cinput%2520class%253D%2522input-field%2520input--lg%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E"
+                                style="
+                    width: 100%;
+                    height: 152px;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Input  shapes -->
+                <h2>Input shapes</h2>
+                <section id="input-shape">
+                    <p> There are 3 input shapes provided by ClutchUI, which are <b>Default</b>,<b> Round</b> and
+                        <b>Corner</b>. You can use the following class to implement them. <code>&lt;input--round |
+                            input--corner&gt;</code>. </p>
+                    <br />
+                    <p> No need to include special class for the <b>Default</b> (sharp corners) input shape. </p>
+                    <div class="demo-container mt-12">
+                        <input class="input-field input--md"
+                            placeholder="Enter text here"
+                            type="text" /><input class="input-field input--md input--round"
+                            placeholder="Enter text here"
+                            type="text" /><input class="input-field input--md input--corner"
+                            placeholder="Enter text here"
+                            type="text" />
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cinput%2520class%253D%2522input-field%2520input--md%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E%250A%253Cinput%2520class%253D%2522input-field%2520input--md%2520input--round%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E%250A%253Cinput%2520class%253D%2522input-field%2520input--md%2520input--corner%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E"
+                                style="
+                    width: 100%;
+                    height: 152px;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Input  types -->
+                <h2>Input types</h2>
+                <section id="input-types">
+                    <p> There are a total of 5 types of input fields provided by ClutchUI. The input types are as
+                        follows. </p>
+                    <br />
+                    <p>
+                        <b>Primary</b>, <b>Secondary</b>, <b>Success</b>, <b>Warining</b>, <b>Failure</b>. They can be
+                        implemented using the following classes. </p>
+                    <br />
+                    <p>
+                        <code>&lt;input--primary | input--secondary | input--success | input--warning |</code>. <br />
+                        <code> input--fail&gt;</code>
+                    </p>
+                    <div class="demo-container mt-12">
+                        <input class="input-field input--md input--primary"
+                            placeholder="Enter text here"
+                            type="text" /><input class="input-field input--md input--secondary"
+                            placeholder="Enter text here"
+                            type="text" /><input class="input-field input--md input--success"
+                            placeholder="Enter text here"
+                            type="text" /><input class="input-field input--md input--warning"
+                            placeholder="Enter text here"
+                            type="text" /><input class="input-field input--md input--fail"
+                            placeholder="Enter text here"
+                            type="text" />
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cinput%2520class%253D%2522input-field%2520input--md%2520input--primary%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E%250A%253Cinput%2520class%253D%2522input-field%2520input--md%2520input--secondary%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E%250A%253Cinput%2520class%253D%2522input-field%2520input--md%2520input--success%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E%250A%253Cinput%2520class%253D%2522input-field%2520input--md%2520input--warning%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E%250A%253Cinput%2520class%253D%2522input-field%2520input--md%2520input--fail%2522%2520placeholder%253D%2522Enter%2520text%2520here%2522%2520type%253D%2522text%2522%252F%253E"
+                                style="
+                    width: 100%;
+                    height: 195px;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Input  Validation -->
+                <h2>Input Validation</h2>
+                <section id="input-validation">
+                    <p> ClutchUI provides 3 types of input validation styles. Validation involves a new
+                        <code>&lt;span&gt;</code> tag which includes custom messages. <br /> Validation can be
+                        implemented with the <code>input--validation</code> class to the parent container. </p>
+                    <div class="demo-container mt-12">
+                        <div class="input--validation">
+                            <input type="text"
+                                class="input-field input--success input--md"
+                                placeholder="Enter text here" />
+                            <span class="input--validation-msg"><i class="far fa-check-circle"></i>Validation
+                                successful!</span>
+                        </div>
+                        <div class="input--validation">
+                            <input type="text"
+                                class="input-field input--fail input--md"
+                                placeholder="Enter text here" />
+                            <span class="input--validation-msg"><i class="fas fa-exclamation-triangle"></i>Validation
+                                Failed!</span>
+                        </div>
+                        <div class="input--validation">
+                            <input type="text"
+                                class="input-field input--warning input--md"
+                                placeholder="Enter text here" />
+                            <span class="input--validation-msg"><i class="fas fa-exclamation-circle"></i>You have been
+                                warned!</span>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=555&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input--validation%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-field%2520input--success%2520input--md%2522%250A%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520text%2520here%2522%252F%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522input--validation-msg%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-check-circle%2522%253E%253C%252Fi%253EValidation%2520successful%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style="width: 100%; transform: scale(1); overflow: hidden"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <h2>Textarea</h2>
+                <section id="textarea">
+                    <p> ClutchUI also provides styles for textarea.</p>
+                    <br>
+                    <p>Use <code>text-area</code> class in your &lt;textarea&gt;.</p>
+                    <br>
+                    <p>Additionally you can use <code>text-area--sm</code>, <code>text-area--md</code> and
+                        <code>text-area--lg</code> for small, medium and large textareas respectively.</p>
+                    <div class="demo-container mt-12">
+                        <textarea class="text-area px-2 text-area--sm"
+                            placeholder="Textarea small"></textarea>
+                        <textarea class="text-area px-2 text-area--md"
+                            placeholder="Textarea medium"></textarea>
+                        <textarea class="text-area px-2 text-area--lg"
+                            placeholder="Textarea large"></textarea>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ctextarea%2520class%253D%2522text-area%2520px-2%2520text-area--sm%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Textarea%2520small%2522%253E%253C%252Ftextarea%253E%250A%253Ctextarea%2520class%253D%2522text-area%2520px-2%2520text-area--md%2522%250A%2509%2509%2520%2520placeholder%253D%2522Textarea%2520medium%2522%253E%253C%252Ftextarea%253E%250A%253Ctextarea%2520class%253D%2522text-area%2520px-2%2520text-area--lg%2522%250A%2520%2520%2509%2509%2520%2520placeholder%253D%2522Textarea%2520large%2522%253E%253C%252Ftextarea%253E"
+                                style="width: 100%; height: 200px; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <div class="pre-next-links display-flex align-items-center justify-content-between mt-9 mb-12">
+                    <a href="../image/image.html"><i class="fas fa-chevron-left"></i> Image</a><a
+                        href="../navigation/navigation.html">Navigation <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <div class="footer py-16 px-5">
+            <footer class="display-grid">
+                <div class="footer-social">
+                    <div class="footer-info">Socials</div>
+                    <ul class="footer-link display-flex align-items-center justify-content-start">
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/RakshithBhat03/"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/rakshithbhat/"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://twitter.com/RakshithBhat1"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright"> &copy; ClutchUI, 2022 All rights reserved. </div>
+                </div>
+                <div class="footer-additional">
+                    <div class="footer-text"> Illustrations by <a target="_blank"
+                            href="https://www.manypixels.co/gallery">manypixels</a>
+                    </div>
+                    <div class="footer-text">Version 1.0</div>
+                    <div class="footer-text">Made with &hearts; by Rakshith Bhat</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="../js/nav.js"></script>
+    <script type="text/javascript"
+        src="../js/sidebar.js"></script>
+</body>
+
+</html>
