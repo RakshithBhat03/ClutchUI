@@ -1,0 +1,5 @@
+/* Modal wrapper */
+.modal-wrapper {
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--radius-md);
+}
