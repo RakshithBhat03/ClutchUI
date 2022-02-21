@@ -79,6 +79,7 @@ ClutchUI provides the following components.
 An alert is a simple block of useful information that is used to display and get the user's attention.
 
 Types of alert:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/alert/alert.html#simple-alert">Simple Alert</a></li>
 <li><a href="https://clutchui.netlify.app/docs/alert/alert.html#icon-alert">Alert with icon</a></li>
@@ -93,6 +94,7 @@ Types of alert:
 An avatar is mini user profile image which is used to give an identity to the user.
 
 Types of avatar:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/avatar/avatar.html#avatar-round">Round Avatar</a></li>
 <li><a href="https://clutchui.netlify.app/docs/avatar/avatar.html#avatar-size">Avatar Sizes</a></li>
@@ -107,6 +109,7 @@ Types of avatar:
 Badges are commonly used to display status information such as notification count or user status.
 
 Types of badges:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/badge/badge.html#badge-avatar">Badge for Avatar</a></li>
 <li><a href="https://clutchui.netlify.app/docs/badge/badge.html#badge-sizes">badge Sizes</a></li>
@@ -122,6 +125,7 @@ Types of badges:
 Buttons are essential part of any website. They are commonly used to interact and get feedback from the user.
 
 Types of buttons:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/button/button.html#button-size">Button Sizes</a></li>
 <li><a href="https://clutchui.netlify.app/docs/button/button.html#button-types">Types of Button</a></li>
@@ -137,6 +141,7 @@ Types of buttons:
 Cards are generally used for conveying short or brief information about certain product. Cards are commonly used in e-commerce websites to showcase their wide variety for products.
 
 Types of cards:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/card/card.html#card--horizontal">Horizontal card</a></li>
 <li><a href="https://clutchui.netlify.app/docs/card/card.html#card--vertical">Vertical card</a></li>
@@ -153,6 +158,7 @@ Types of cards:
 Grids are one of the basic cornerstones for layouts in web. They are used to structure the web page and make them visually appleaing.
 
 Types of grid:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/grid/grid.html#grids-equal">Equal Grids</a></li>
 <li><a href="https://clutchui.netlify.app/docs/grid/grid.html#grids-percentage">Split Grids</a></li>
@@ -165,6 +171,7 @@ Types of grid:
 Images are everywhere on the internet. With ClutchUI, implementing images so much more easier than before.
 
 Types of Image:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/image/image.html#image-round">Round Image</a></li>
 <li><a href="https://clutchui.netlify.app/docs/image/image.html#image-square">Square Image</a></li>
@@ -179,6 +186,7 @@ Types of Image:
 Inputs are mainly used in Login or Sign-up forms and other general use cases.
 
 Types of Input:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/input/input.html#input-default">Simple input</a></li>
 <li><a href="https://clutchui.netlify.app/docs/input/input.html#input-size">Input sizes</a></li>
@@ -195,6 +203,7 @@ Types of Input:
 Lists are used to group together similar items.
 
 Types of List:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/list/list.html#list-spaced">Spaced Lists</a></li>
 <li><a href="https://clutchui.netlify.app/docs/list/list.html#list-stacked">Stacked Lists</a></li>
@@ -234,6 +243,7 @@ You can check it out [here](https://clutchui.netlify.app/docs/rating/rating.html
 Typography is an integral part of any component library. ClutchUI provides various typography class aswell as some text utilities.
 
 Typography classes:
+
 <ul>
 <li><a href="https://clutchui.netlify.app/docs/typography/typography.html#typography-heading">Heading</a></li>
 <li><a href="https://clutchui.netlify.app/docs/typography/typography.html#typography-size">Text Size</a></li>
@@ -254,7 +264,7 @@ You can check it out [here](https://clutchui.netlify.app/docs/snackbar/snackbar.
 
 ## Site Overview
 
-![ClutchUI](assets/site_overview.gif)
+![ClutchUI](assets/Site_overview.gif)
 
 <hr />
 
