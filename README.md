@@ -62,8 +62,9 @@ Here's a simple starter template to get you started.
     <li><a href="https://clutchui.netlify.app/docs/input/input.html">Input</a></li>
     <li><a href="https://clutchui.netlify.app/docs/list/list.html">List</a></li>
     <li><a href="https://clutchui.netlify.app/docs/modal/modal.html">Modal</a></li>
-    <li><a href="https://clutchui.netlify.app/docs/navigation/navigation.html">Navigation</a></li>
+    <li><a href="https://temp-dev--clutchui.netlify.app/docs/navigation/navigation.html">Navigation</a></li>
     <li><a href="https://clutchui.netlify.app/docs/rating/rating.html">Rating</a></li>
+    <li><a href="https://temp-dev--clutchui.netlify.app/docs/slider/slider.html#navigation-mobile">Slider</a></li>
     <li><a href="https://clutchui.netlify.app/docs/typography/typography.html">Typography</a></li>
     <li><a href="https://clutchui.netlify.app/docs/snackbar/snackbar.html">Snackbar</a></li>
 </ol>
