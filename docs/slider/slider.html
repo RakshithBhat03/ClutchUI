@@ -8,11 +8,11 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"
-        href="../styles.css" />
-    <title>ClutchUI | Get Started</title>
+        href="../../styles.css" />
+    <title>ClutchUI | Slider</title>
     <link rel="icon"
         type="image/x-icon"
-        href="../assets/favicon.ico">
+        href="../../assets/favicon.ico">
 </head>
 
 <body>
@@ -27,10 +27,10 @@
                 <div class="nav__menu display-flex align-items-center justify-content-end">
                     <ul class="nav__menu--list display-flex align-items-center justify-content-center">
                         <li><a class="py-4 px-9"
-                                href="../index.html">Home</a></li>
+                                href="../../">Home</a></li>
                         <li>
                             <a class="py-4 px-9 active-link"
-                                href="./getstarted.html">Docs</a>
+                                href="../getstarted.html">Docs</a>
                         </li>
                         <li>
                             <a class="py-4 px-9"
@@ -48,10 +48,10 @@
                 <div class="nav__menu display-flex align-items-center justify-content-center">
                     <ul class="nav__menu--list display-flex flex-col align-items-start justify-content-center">
                         <li><a class="py-4 px-9"
-                                href="../index.html">Home</a></li>
+                                href="../../">Home</a></li>
                         <li>
                             <a class="py-4 px-9 active-link"
-                                href="./getstarted.html">Docs</a>
+                                href="../getstarted.html">Docs</a>
                         </li>
                         <li>
                             <a class="py-4 px-9"
@@ -75,90 +75,95 @@
                             class="fas fa-angle-double-right arrow-icon"></i>
                     </li>
                     <li class="sidebar--chapter"><a href=""></a>Get Started</li>
-                    <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="../getstarted.html#introduction">Introduction</a></li>
+                    <li><a href="../getstarted.html#installation">Installation</a></li>
                     <li>
-                        <a href="#starter-template">Starter Template</a>
+                        <a href="../getstarted.html#starter-template">Starter Template</a>
                     </li>
                     <li class="sidebar--chapter"><a href=""></a>Components</li>
-                    <li><a href="./alert/alert.html">Alert</a></li>
+                    <li><a href="../alert/alert.html">Alert</a></li>
                     <li>
-                        <a href="./avatar/avatar.html">Avatar</a>
+                        <a href="../avatar/avatar.html">Avatar</a>
                     </li>
-                    <li><a href="./badge/badge.html">Badge</a></li>
-                    <li><a href="./button/button.html">Button</a></li>
-                    <li><a href="./card/card.html">Card</a></li>
+                    <li><a href="../badge/badge.html">Badge</a></li>
+                    <li><a href="../button/button.html">Button</a></li>
+                    <li><a href="../card/card.html">Card</a></li>
                     <li>
-                        <a href="./grid/grid.html">Grid</a>
+                        <a href="../grid/grid.html">Grid</a>
                     </li>
-                    <li><a href="./image/image.html">Image</a></li>
-                    <li><a href="./input/input.html">Input</a></li>
+                    <li><a href="../image/image.html">Image</a></li>
+                    <li><a href="../input/input.html">Input</a></li>
                     <li>
-                        <a href="./list/list.html">List</a>
-                    </li>
-                    <li>
-                        <a href="./modal/modal.html">Modal</a>
-                    </li>
-                    <li><a href="./navigation/navigation.html">Navigation</a></li>
-                    <li>
-                        <a href="./rating/rating.html">Rating</a>
+                        <a href="../list/list.html">List</a>
                     </li>
                     <li>
-                        <a href="./slider/slider.html">Slider</a>
+                        <a href="../modal/modal.html">Modal</a>
+                    </li>
+                    <li><a href="../navigation/navigation.html">Navigation</a></li>
+                    <li>
+                        <a href="../rating/rating.html">Rating</a>
                     </li>
                     <li>
-                        <a href="./typography/typography.html">Typography</a>
+                        <a class="active-link"
+                            href="../slider/slider.html">Slider</a>
                     </li>
                     <li>
-                        <a href="./snackbar/snackbar.html">Snackbar</a>
+                        <a href="../typography/typography.html">Typography</a>
+                    </li>
+                    <li>
+                        <a href="../snackbar/snackbar.html">Snackbar</a>
                     </li>
                 </ul>
             </aside>
             <section class="main__section">
-                <h1 class="h1">Get Started</h1>
+                <h1 class="h1">Slider</h1>
                 <hr />
-                <section id="introduction"
-                    class="introduction">
-                    <h2 class="h2">Introduction</h2>
-                    <p>
-                        <b>ClutchUI</b> is an Open-Source CSS component library built purely from HTML and CSS. </p>
-                    <br />
-                    <p> It provides modular components which can be used to build websites quickly, efficiently and most
-                        importantly responsive. </p>
+                <section id="slider-introduction">
+                    <h2>Introduction</h2>
+                    <p>Sliders are useful tools in getting information from the user. They can accept values in a
+                        specific range and are usually used as price range sliders in E-commerce websites.</p>
+                    <br>
                 </section>
-                <section id="installation">
-                    <h2 class="h2">Installation</h2>
-                    <p> Thank you for choosing <strong>ClutchUI</strong>. Let's get started. </p>
-                    <br />
-                    <p> In order to start using the ClutchUI in your projects, just copy code snippet below. Make sure
-                        to paste it in your <code>&lt;head&gt;</code> tag and above all your <code>&lt;link&gt;</code>
-                        tags. </p>
-                    <div class="code-snippet display-flex justify-content-center align-items-center">
-                        <div class="code-container">
-                            <iframe
-                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fclutchui.netlify.app%252Fstylesheets%252Findex.css%2522%2520%252F%253E"
-                                style="width: 100%; height: 110px; transform: scale(1); overflow:hidden;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
+                <section id="slider-simple">
+                    <h2>Simple Slider</h2>
+                    <p>You can use the <code>slider</code> class in your input tag to get started.</p>
+                    <br>
+                    <div class="demo-container mt-12">
+                        <input type="range"
+                            name="slider"
+                            class="slider"
+                            min="0"
+                            max="100"
+                            step="10"
+                            value="20"
+                            list="tickmarks">
+                        <datalist id="tickmarks">
+                            <option value="0"></option>
+                            <option value="10"></option>
+                            <option value="20"></option>
+                            <option value="30"></option>
+                            <option value="40"></option>
+                            <option value="50"></option>
+                            <option value="60"></option>
+                            <option value="70"></option>
+                            <option value="80"></option>
+                            <option value="90"></option>
+                            <option value="100"></option>
+                        </datalist>
                     </div>
-                </section>
-                <section id="starter-template"
-                    class="starter-template">
-                    <h2 class="h2">Starter Template</h2>
-                    <p>Here's a simple starter template to get you started.</p>
                     <div class="code-snippet">
                         <div class="code-container">
                             <iframe
-                                src="https://carbon.now.sh/embed?bg=rgba%28182%2C162%2C145%2C0%29&t=one-light&wt=none&l=htmlmixed&width=339&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Chtml%253E%250A%2520%2520%253Chead%253E%250A%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522utf-8%2522%253E%250A%2520%2520%2520%2520%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1%2522%253E%250A%250A%2520%2520%2520%252F%252FClutchUI%2520CSS%250A%2520%2520%2520%2520%250A%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fclutchui.netlify.app%252Fstylesheets%252Findex.css%252F%2522%253E%250A%2520%2520%2520%250A%2520%2520%2520%252F%252FYour%2520stylesheets%2520here%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Ctitle%253EStarter%2520Template%253C%252Ftitle%253E%250A%2520%2520%253C%252Fhead%253E%250A%2520%2520%253Cbody%253E%250A%2520%2520%2520%2520%253Ch1%253EHello%2520World%253C%252Fh1%253E%250A%2509%250A%2520%2520%2520%2520%253Ch2%253ELet%27s%2520Clutch%2520it%21%21%253C%252Fh2%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cscript%2520src%253D%2522https%253A%252F%252Fclutchui.netlify.app%252Fdocs%252Fjs%252Fsidebar.js%2522%253E%253C%252Fscript%253E%250A%2520%2520%2520%2520%253Cscript%2520src%253D%2522https%253A%252F%252Fclutchui.netlify.app%252Fdocs%252Fjs%252Fnav.js%2522%253E%253C%252Fscript%253E%250A%2520%2520%253C%252Fbody%253E%250A%253C%252Fhtml%253E"
-                                style="width: 100%; height: 556px; transform: scale(1); overflow:hidden;"
+                                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=536&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522range%2522%2520name%253D%2522slider%2522%250A%2509%2520%2520class%253D%2522slider%2522%2520min%253D%25220%2522%250A%2520%2520%2520%2520%2520%2520max%253D%2522100%2522%2520step%253D%252210%2522%250A%2520%2520%2520%2520%2520%2520value%253D%252220%2522%2520list%253D%2522tickmarks%2522%250A%2520%2520%2520%2520%252F%253E%250A%253Cdatalist%2520id%253D%2522tickmarks%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%25220%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252210%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252220%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252230%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252240%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252250%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252260%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252270%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252280%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252290%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522100%2522%253E%253C%252Foption%253E%250A%253C%252Fdatalist%253E"
+                                style="width: 100%; height: 230px; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
                         </div>
                     </div>
                 </section>
-                <div class="pre-next-links display-flex align-items-center justify-content-end mt-9 mb-12">
-                    <a href="./alert/alert.html">Alert <i class="fas fa-chevron-right"></i></a>
+                <div class="pre-next-links display-flex align-items-center justify-content-between mt-9 mb-12">
+                    <a href="../rating/rating.html"><i class="fas fa-chevron-left"></i> Rating</a><a
+                        href="../typography/typography.html">Typography <i class="fas fa-chevron-right"></i></a>
                 </div>
             </section>
         </div>
@@ -197,9 +202,9 @@
         </div>
     </div>
     <script type="text/javascript"
-        src="js/nav.js"></script>
+        src="../js/nav.js"></script>
     <script type="text/javascript"
-        src="js/sidebar.js"></script>
+        src="../js/sidebar.js"></script>
 </body>
 
 </html>

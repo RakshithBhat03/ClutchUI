@@ -4,6 +4,12 @@
   padding-block: var(--size-9);
 }
 
+.navigation-wrapper-mobile {
+  position: relative;
+  box-shadow: var(--card-box-shadow);
+  height: 30rem;
+}
+
 .navigation {
   align-items: center;
   color: var(--text-white);
@@ -66,6 +72,33 @@
 .navigation__hamburger > button {
   color: var(--color-white);
   font-size: var(--size-11);
+}
+
+.navigation__mobile {
+  top: 0;
+  right: 0;
+  width: 0;
+  box-shadow: var(--nav-box-shadow);
+  overflow: hidden;
+  background-color: var(--color-white);
+  height: 100%;
+  transition: 0.2s width linear;
+}
+
+.navigation__mobile-list {
+  align-items: center;
+  font-size: var(--size-11);
+  gap: var(--size-9);
+}
+.mobile__menu-close {
+  color: var(--color-dark-gray);
+}
+.mobile__menu-item {
+  color: var(--primary-color-dark);
+}
+
+.navigation__mobile-active {
+  width: 50%;
 }
 
 /* navigation list */

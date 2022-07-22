@@ -62,8 +62,9 @@ Here's a simple starter template to get you started.
     <li><a href="https://clutchui.netlify.app/docs/input/input.html">Input</a></li>
     <li><a href="https://clutchui.netlify.app/docs/list/list.html">List</a></li>
     <li><a href="https://clutchui.netlify.app/docs/modal/modal.html">Modal</a></li>
-    <li><a href="https://clutchui.netlify.app/docs/navigation/navigation.html">Navigation</a></li>
+    <li><a href="https://temp-dev--clutchui.netlify.app/docs/navigation/navigation.html">Navigation</a></li>
     <li><a href="https://clutchui.netlify.app/docs/rating/rating.html">Rating</a></li>
+    <li><a href="https://temp-dev--clutchui.netlify.app/docs/slider/slider.html#navigation-mobile">Slider</a></li>
     <li><a href="https://clutchui.netlify.app/docs/typography/typography.html">Typography</a></li>
     <li><a href="https://clutchui.netlify.app/docs/snackbar/snackbar.html">Snackbar</a></li>
 </ol>
@@ -228,6 +229,8 @@ Navigation are essential part of any website. With ClutchUI you can build quick 
 
 You can check it out [here](https://clutchui.netlify.app/docs/navigation/navigation.html).
 
+For Mobile navigation [here](https://temp-dev--clutchui.netlify.app/docs/navigation/navigation.html#navigation-mobile)
+
 <hr />
 
 ### Rating
@@ -235,6 +238,14 @@ You can check it out [here](https://clutchui.netlify.app/docs/navigation/navigat
 Ratings are a good way for the user to share their feedback or opinion on anything.
 
 You can check it out [here](https://clutchui.netlify.app/docs/rating/rating.html).
+
+<hr />
+
+### Slider
+
+Sliders are useful tools in getting information from the user. They can accept values in a specific range and are usually used as price range sliders in E-commerce websites.
+
+You can check it out [here](https://temp-dev--clutchui.netlify.app/docs/slider/slider.htmll).
 
 <hr />
 
